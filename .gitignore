@@ -1,0 +1,54 @@
+# IDEs y entornos
+.idea
+.vscode/
+
+# Archivos de Python
+__pycache__/
+*.py[cod]
+*$py.class
+.mypy_cache/
+
+# Entornos virtuales
+venv/
+env/
+env3.*/
+.env/
+.envrc
+.venv/
+
+# Variables de entorno
+.env
+*.env
+
+# Bases de datos y archivos temporales
+*.sqlite3
+*.db
+test.db
+
+# Cachés y pruebas
+.cache/
+.pytest_cache/
+htmlcov/
+.coverage*
+coverage.xml
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Documentación y builds
+site/
+docs_build/
+site_build/
+docs.zip
+archive.zip
+
+# Otros
+log.txt
+Pipfile.lock
+
+# vim temporary files
+*~
+.*.sw?
+
+# macOS
+.DS_Store
