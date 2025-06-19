@@ -1,35 +1,47 @@
-# Arquitectura MVC con FastAPI
+# Proyecto FastAPI: Predicción y Gestión de Usuarios
 
-Este proyecto implementa una arquitectura **MVC (Modelo-Vista-Controlador)** usando FastAPI.
+Este proyecto es una API desarrollada con **FastAPI** que implementa endpoints para predicción de salud mental basada en el uso de redes sociales y gestión de usuarios. Utiliza una arquitectura modular, facilitando la escalabilidad y el mantenimiento.
 
-## Estructura de Carpetas
+## Estructura del Proyecto
 
 ```
 fastApi/
-│   main.py                # Punto de entrada de la aplicación
+│   main.py                  # Punto de entrada de la aplicación
+│   requirements.txt         # Dependencias del proyecto
+│   Social Media.csv         # Dataset para predicción
 │
-├── models/                # Modelos de datos (Pydantic)
-│   └── item.py
-│
-├── controllers/           # Lógica de negocio y rutas
-│   └── item_controller.py
-│
-└── views/                 # Vistas y manejo de respuestas personalizadas
-    └── error_views.py
+└── app/
+    ├── api/
+    │   └── v1/
+    │       ├── routers/     # Endpoints agrupados por dominio
+    │       │   ├── users.py
+    │       │   └── predict.py
+    │       ├── schemas/     # Esquemas Pydantic
+    │       │   └── user.py
+    │       └── services/    # Lógica de negocio
+    │           └── user_service.py
+    ├── core/                # Configuración global y seguridad
+    │   ├── config.py
+    │   └── security.py
+    ├── db/                  # Configuración de la base de datos
+    │   ├── base.py
+    │   └── session.py
+    ├── models/              # Modelos ORM
+    │   └── user.py
+    └── utils/               # Funciones utilitarias
+        └── helpers.py
 ```
 
-## ¿Cómo funciona la arquitectura MVC en FastAPI?
+## Principales Endpoints
 
-- **Modelos (`models/`)**: Definen la estructura de los datos usando Pydantic. Por ejemplo, `Item` representa un recurso de la API.
-- **Controladores (`controllers/`)**: Contienen la lógica de negocio y definen las rutas de la API. Por ejemplo, `item_controller.py` gestiona las operaciones CRUD sobre los items.
-- **Vistas (`views/`)**: Gestionan la presentación de las respuestas y el manejo de errores personalizados. Por ejemplo, `error_views.py` define respuestas para errores 404.
-- **main.py**: Es el punto de entrada, donde se inicializa FastAPI, se incluyen los routers de los controladores y se configuran los manejadores de errores y middlewares.
+- **GET /api/v1/users**: Lista de usuarios de ejemplo.
+- **GET /api/v1/predict/mental_health?avg_daily_usage=5**: Predice el puntaje de salud mental según las horas promedio de uso diario de redes sociales. Devuelve una imagen con la predicción.
 
-## Ejecución
+## Instalación y Ejecución
 
 1. Instala las dependencias:
    ```bash
-   pip install fastapi uvicorn
+   pip install -r requirements.txt
    ```
 2. Ejecuta el servidor:
    ```bash
@@ -37,64 +49,11 @@ fastApi/
    ```
 3. Accede a la documentación interactiva en [http://localhost:8000/docs](http://localhost:8000/docs)
 
----
+## Notas
 
-Esta estructura facilita la escalabilidad y el mantenimiento del proyecto, separando claramente la lógica de datos, negocio y presentación.
-
-# Arquitectura para una aplicación grande con FastAPI
-
-Esta estructura está pensada para proyectos grandes y escalables, siguiendo buenas prácticas de organización y separación de responsabilidades.
-
-## Estructura de carpetas
-
-```
-/app
-    /api
-        /v1
-            /routers        # Rutas (endpoints) agrupadas por dominio
-            /schemas        # Esquemas Pydantic para validación y serialización
-            /services       # Lógica de negocio de cada dominio
-    /core                   # Configuración y utilidades globales (seguridad, settings, etc)
-    /models                 # Modelos ORM (ej. SQLAlchemy)
-    /db                     # Configuración de la base de datos
-    /utils                  # Funciones utilitarias generales
-    main.py                 # Punto de entrada de la app
-/tests                      # Pruebas automáticas
-```
-
-## ¿Cómo funciona?
-
-- **Routers**: Cada archivo en `routers` define endpoints relacionados (por ejemplo, usuarios, productos, etc.) y se incluyen en la app principal.
-- **Schemas**: Definen la estructura de los datos de entrada/salida usando Pydantic.
-- **Services**: Contienen la lógica de negocio, separados de los endpoints.
-- **Models**: Modelos ORM para la base de datos.
-- **Core**: Configuración global, seguridad, variables de entorno, etc.
-- **DB**: Configuración de la conexión y sesión de la base de datos.
-- **Utils**: Funciones auxiliares reutilizables.
-- **Tests**: Pruebas unitarias y de integración.
-
-## Ejemplo de flujo
-
-1. El usuario hace una petición a un endpoint definido en un router.
-2. El router valida los datos usando un schema.
-3. El router llama a un servicio para ejecutar la lógica de negocio.
-4. El servicio interactúa con los modelos y la base de datos si es necesario.
-5. Se retorna la respuesta al usuario.
-
-## Ejecución
-
-Instala las dependencias necesarias:
-
-```bash
-pip install fastapi uvicorn sqlalchemy pydantic
-```
-
-Ejecuta la aplicación:
-
-```bash
-uvicorn app.main:app --reload
-```
+- El archivo `Social Media.csv` debe estar en la raíz del proyecto para que el endpoint de predicción funcione correctamente.
+- El proyecto está preparado para escalar y añadir nuevos módulos fácilmente.
 
 ---
 
-Esta arquitectura permite escalar y mantener el proyecto de forma ordenada y profesional.
+Desarrollado con FastAPI, Pydantic, SQLAlchemy, pandas, scikit-learn y matplotlib.
