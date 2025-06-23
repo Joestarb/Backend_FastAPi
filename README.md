@@ -39,15 +39,67 @@ fastApi/
 
 ## Instalación y Ejecución
 
-1. Instala las dependencias:
-   ```bash
-   pip install -r requirements.txt
-   ```
-2. Ejecuta el servidor:
-   ```bash
-   uvicorn main:app --reload
-   ```
-3. Accede a la documentación interactiva en [http://localhost:8000/docs](http://localhost:8000/docs)
+### 1. Crear el entorno virtual
+
+```bash
+python -m venv .venv
+```
+
+### 2. Activar el entorno virtual (PowerShell en Windows)
+
+```powershell
+.\.venv\Scripts\Activate.ps1
+```
+
+> Si estás en Git Bash o Linux, usa:
+>
+> ```bash
+> source .venv/bin/activate
+> ```
+
+### 3. Instalar FastAPI y Uvicorn
+
+```bash
+pip install fastapi uvicorn
+```
+
+### 4. (Opcional) Instalar soporte para formularios
+
+> Necesario si vas a subir archivos o usar `Form(...)` en tus endpoints.
+
+```bash
+pip install python-multipart
+```
+
+### 5. Instalar las dependencias del proyecto
+
+```bash
+pip install -r requirements.txt
+```
+
+### 6. Ejecutar el servidor de desarrollo
+
+```bash
+uvicorn main:app --reload
+```
+
+---
+
+## Documentación automática
+
+Una vez iniciado el servidor, puedes acceder a la documentación generada por FastAPI:
+
+- Swagger UI: [http://127.0.0.1:8000](http://127.0.0.1:8000)
+- Redoc (si está habilitado): [http://127.0.0.1:8000/redoc](http://127.0.0.1:8000/redoc)
+
+---
+
+## Requisitos
+
+- Python 3.10 o superior (preferentemente)
+- pip actualizado (`python -m pip install --upgrade pip`)
+
+---
 
 ## Notas
 
