@@ -1,5 +1,7 @@
 from fastapi import UploadFile, File, APIRouter, HTTPException
 import shutil, os
+import csv
+from fastapi.responses import JSONResponse
 
 router = APIRouter()
 
@@ -29,3 +31,23 @@ async def upload_csv(file: UploadFile = File(...)):
         raise HTTPException(status_code=500, detail=f"Error al guardar el archivo: {str(e)}")
 
     return {"message": f"Archivo '{file.filename}' guardado exitosamente en /CSV"}
+
+@router.get("/read/csv")
+async def read_csv():
+    try:
+        # Buscar el primer archivo CSV en la carpeta
+        files = [f for f in os.listdir(CSV_FOLDER) if f.endswith('.csv')]
+        if not files:
+            raise HTTPException(status_code=404, detail="No hay archivos CSV en la carpeta")
+
+        csv_path = os.path.join(CSV_FOLDER, files[0])
+
+        # Leer el archivo CSV
+        with open(csv_path, newline='', encoding='utf-8') as csvfile:
+            reader = csv.DictReader(csvfile)
+            data = [row for row in reader]
+
+        return JSONResponse(content=data)
+
+    except Exception as e:
+        raise HTTPException(status_code=500, detail=f"Error al leer el archivo CSV: {str(e)}")

@@ -46,4 +46,4 @@ app.include_router(logistic_regression.router, prefix="/api/v1", tags=["Regresi√
 # ============================
 # Endpoints de K-Means Clustering
 # ============================
-app.include_router(kmeans_clustering.router, prefix="/api/v1", tags=["K-Means Clustering"])  # NUEVO ENDPOINT
+app.include_router(kmeans_clustering.router, prefix="/api/v1", tags=["K-Means Clustering"])
