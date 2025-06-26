@@ -33,8 +33,8 @@ def generate_boxplot_with_user_point(user_input: UserBoxplotInput, output_path: 
     plt.figure(figsize=(6, 6))
     ax = sns.boxplot(data=df, y=eje_y)
 
-    ax.axhline(user_input.sleep_time, color='red', linestyle='--', label='Tu punto')
-    ax.set_title(f"Distribución con tu valor ({user_input.sleep_time})")
+    ax.axhline(user_input.user_value, color='red', linestyle='--', label='Tu punto')
+    ax.set_title(f"Distribución con tu valor ({user_input.user_value})")
     ax.legend() 
 
     """ Configuraciones generales de la gráfica """
@@ -56,6 +56,6 @@ def generate_boxplot_with_user_point_and_summary(user_input: UserBoxplotInput, d
         raise ValueError(f"La columna '{eje_y}' no existe en el DataFrame.")
 
     """ Generamos el resumen de estadísticas """
-    resumen = generate_summary_statistics(user_input.sleep_time, eje_y, df)
+    resumen = generate_summary_statistics(user_input.user_value, eje_y, df)
 
     return resumen

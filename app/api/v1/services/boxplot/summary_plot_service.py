@@ -1,5 +1,17 @@
 import pandas as pd
 
+Col_saludable = "Mental_Health_Score"
+Col_Edad = "Age"
+Col_problematica_1 = "Conflicts_Over_Social_Media"
+Col_problematica_2 = "Addicted_Score"
+Col_problematica_3 = "Avg_Daily_Usage_Hours"
+
+VARIABLES_PROBLEMATICAS = {
+    Col_problematica_1,
+    Col_problematica_2,
+    Col_problematica_3,
+}
+
 def generate_summary_statistics(user_value: float, columna: str, df: pd.DataFrame) -> dict:
     serie = df[columna].dropna()
     descripcion = serie.describe()
@@ -12,46 +24,124 @@ def generate_summary_statistics(user_value: float, columna: str, df: pd.DataFram
     promedio = round(descripcion["mean"], 2)
     desviacion = round(descripcion["std"], 2)
 
-    if user_value < q1:
-        posicion = "Estás en el grupo con los valores más bajos."
-        interpretacion = (
-            f"Tu valor ({user_value}) está entre los más bajos de todos los registrados en '{columna}'. "
-            f"La mayoría de las personas tienen un valor mayor que el tuyo, y solo un pequeño porcentaje tiene resultados parecidos o más bajos. "
-            f"Esto puede ser una señal de alerta dependiendo del contexto de esta variable."
-        )
-        recomendacion = (
-            "Sería buena idea analizar este resultado con calma. Si esta variable refleja salud, bienestar o desempeño, podrías beneficiarte de apoyo, asesoría o pequeños cambios positivos."
-        )
+    es_problematica = columna in VARIABLES_PROBLEMATICAS
 
-    elif q1 <= user_value < q2:
-        posicion = "Estás un poco por debajo del promedio."
-        interpretacion = (
-            f"Tu resultado ({user_value}) está por debajo del promedio general ({promedio}), "
-            f"pero no se encuentra entre los más bajos. Hay muchas personas con resultados similares, aunque aún hay espacio para mejorar."
-        )
-        recomendacion = (
-            "Es un buen momento para hacer pequeños ajustes que te ayuden a seguir avanzando. Estás cerca del promedio, y con constancia podrías superarlo fácilmente."
-        )
+    # Lógica invertida si la variable es problemática
 
-    elif q2 <= user_value < q3:
-        posicion = "Estás por encima del promedio."
-        interpretacion = (
-            f"Tu valor ({user_value}) está por encima de la mayoría, lo cual es una buena señal. "
-            f"Muchas personas tienen resultados más bajos que tú, lo que indica un desempeño o estado positivo."
-        )
-        recomendacion = (
-            "¡Bien hecho! Trata de mantener o incluso mejorar ese nivel. Vas por buen camino."
-        )
+    if es_problematica:
+        if user_value <= 2:
+            posicion = "Nivel muy bajo"
+            interpretacion = (
+                f"Tu resultado ({user_value}) indica que prácticamente no tienes conflictos, adicción o uso excesivo relacionado con '{columna}'. "
+                "Esto refleja un excelente manejo en este aspecto."
+            )
+            recomendacion = "Mantén estos hábitos. El equilibrio digital y emocional es fundamental."
+
+        elif user_value <= 4:
+            posicion = "Nivel bajo"
+            interpretacion = (
+                f"Tu resultado ({user_value}) sugiere un nivel bajo de impacto en '{columna}'. "
+                "Podrías experimentar pequeñas tensiones o hábitos poco frecuentes, pero no es preocupante."
+            )
+            recomendacion = "Sigue prestando atención y mantén tu autocontrol."
+
+        elif user_value <= 6:
+            posicion = "Nivel medio"
+            interpretacion = (
+                f"Tu resultado ({user_value}) está en un punto intermedio. "
+                "Aunque no es alarmante, sí es un nivel donde vale la pena reflexionar sobre el impacto que esto puede tener."
+            )
+            recomendacion = "Evalúa tus rutinas y busca reducir gradualmente si notas efectos negativos."
+
+        elif user_value <= 8:
+            posicion = "Nivel alto"
+            interpretacion = (
+                f"Tu resultado ({user_value}) indica una tendencia considerable hacia el conflicto, la adicción o el uso intensivo en '{columna}'. "
+                "Esto podría estar afectando tu bienestar, tus relaciones o tu rendimiento diario."
+            )
+            recomendacion = "Te convendría tomar acciones concretas: reducir tiempo, establecer límites, buscar apoyo o alternativas."
+
+        else:
+            posicion = "Nivel crítico"
+            interpretacion = (
+                f"Tu resultado ({user_value}) es muy alto. Esto sugiere una presencia intensa de problemas en '{columna}', lo cual es preocupante. "
+                "Podría estar afectando significativamente tu vida emocional, social o física."
+            )
+            recomendacion = "Busca ayuda o guía profesional. Es importante actuar pronto para recuperar el equilibrio y tu bienestar."
 
     else:
-        posicion = "Estás entre los valores más altos."
+        # Variables saludables (como salud mental)
+        if user_value < q1:
+            posicion = "Estás en el grupo con los valores más bajos."
+            interpretacion = (
+                f"Tu valor ({user_value}) está entre los más bajos registrados en '{columna}'. "
+                "Esto sugiere que podrías estar enfrentando desafíos en este aspecto."
+            )
+            recomendacion = "Considera buscar apoyo o realizar pequeños cambios positivos que mejoren tu bienestar."
+
+        elif q1 <= user_value < q2:
+            posicion = "Estás un poco por debajo del promedio."
+            interpretacion = (
+                f"Tu valor ({user_value}) está por debajo del promedio general ({promedio}). "
+                "Aunque no estás en el grupo más bajo, todavía hay oportunidad de mejora."
+            )
+            recomendacion = "Con pequeños pasos podrías acercarte a un mejor nivel. La constancia hace la diferencia."
+
+        elif q2 <= user_value < q3:
+            posicion = "Estás por encima del promedio."
+            interpretacion = (
+                f"Tu valor ({user_value}) supera al promedio general ({promedio}), lo cual es positivo. "
+                "Refleja un estado o desempeño favorable en este aspecto."
+            )
+            recomendacion = "¡Muy bien! Sigue con esos hábitos y busca mantener o incluso mejorar tu nivel."
+
+        else:
+            posicion = "Estás entre los valores más altos."
+            interpretacion = (
+                f"Tu valor ({user_value}) es de los más altos en '{columna}', indicando un nivel sobresaliente."
+            )
+            recomendacion = "Excelente resultado. Es un ejemplo de bienestar y equilibrio. ¡Sigue así!"
+
+    if Col_Edad:
+        if user_value < 14:
+            posicion = "Muy joven (10–13 años)"
+            interpretacion = (
+                f"Tienes {user_value} años, lo que corresponde a una etapa muy temprana de desarrollo. "
+                "Es un momento clave para construir hábitos positivos, explorar intereses y cuidar tu salud física y emocional."
+            )
+            recomendacion = "Aprovecha tu curiosidad y energía para aprender y mantener un estilo de vida saludable."
+
+        elif user_value < 18:
+            posicion = "Adolescente (14–17 años)"
+            interpretacion = (
+                f"Tienes {user_value} años, una etapa de muchos cambios y descubrimientos. "
+                "Es común tener altibajos, pero también es una gran oportunidad para formar bases sólidas para tu futuro."
+            )
+            recomendacion = "Busca equilibrio entre tus estudios, tus pasatiempos y tu descanso. Rodéate de personas positivas."
+
+        elif user_value < 22:
+            posicion = "Joven adulto (18–21 años)"
+            interpretacion = (
+                f"Con {user_value} años, estás dando los primeros pasos hacia la vida adulta. "
+                "Estás construyendo tu independencia y es un excelente momento para afianzar hábitos, metas y relaciones."
+            )
+            recomendacion = "Organiza tus prioridades, cuida tu salud mental y rodéate de apoyo positivo."
+
+        elif user_value < 26:
+            posicion = "Adulto joven (22–25 años)"
+            interpretacion = (
+                f"A los {user_value} años ya tienes más claridad sobre tus intereses y responsabilidades. "
+                "Puede ser una etapa de alta exigencia, pero también de mucho crecimiento personal y profesional."
+            )
+            recomendacion = "Mantén el balance entre tu trabajo, tus vínculos y tu bienestar físico y emocional."
+
+    else:
+        posicion = "Adulto joven consolidado (26–30 años)"
         interpretacion = (
-            f"Tu resultado ({user_value}) está entre los más altos registrados para '{columna}'. "
-            f"Eso te coloca dentro del grupo con mejor desempeño o estado."
+            f"Con {user_value} años, probablemente ya tengas una rutina definida. "
+            "Es una buena etapa para revisar tus metas, mejorar tu bienestar general y compartir tu experiencia con otros."
         )
-        recomendacion = (
-            "¡Excelente! Estás en un nivel destacado. Si esta variable refleja algo positivo, estás dando un gran ejemplo."
-        )
+        recomendacion = "Refuerza lo que has aprendido, mantén tu salud al día y sigue cultivando tus relaciones y aspiraciones."
 
     return {
         "columna_analizada": columna,
