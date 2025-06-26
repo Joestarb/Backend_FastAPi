@@ -102,7 +102,7 @@ def generate_summary_statistics(user_value: float, columna: str, df: pd.DataFram
             )
             recomendacion = "Excelente resultado. Es un ejemplo de bienestar y equilibrio. ¡Sigue así!"
 
-    if Col_Edad:
+    if columna == Col_Edad:
         if user_value < 14:
             posicion = "Muy joven (10–13 años)"
             interpretacion = (
@@ -135,13 +135,13 @@ def generate_summary_statistics(user_value: float, columna: str, df: pd.DataFram
             )
             recomendacion = "Mantén el balance entre tu trabajo, tus vínculos y tu bienestar físico y emocional."
 
-    else:
-        posicion = "Adulto joven consolidado (26–30 años)"
-        interpretacion = (
-            f"Con {user_value} años, probablemente ya tengas una rutina definida. "
-            "Es una buena etapa para revisar tus metas, mejorar tu bienestar general y compartir tu experiencia con otros."
-        )
-        recomendacion = "Refuerza lo que has aprendido, mantén tu salud al día y sigue cultivando tus relaciones y aspiraciones."
+        else:
+            posicion = "Adulto joven consolidado (26–30 años)"
+            interpretacion = (
+                f"Con {user_value} años, probablemente ya tengas una rutina definida. "
+                "Es una buena etapa para revisar tus metas, mejorar tu bienestar general y compartir tu experiencia con otros."
+            )
+            recomendacion = "Refuerza lo que has aprendido, mantén tu salud al día y sigue cultivando tus relaciones y aspiraciones."
 
     return {
         "columna_analizada": columna,
