@@ -7,6 +7,14 @@ import numpy as np
 import os
 from pydantic import BaseModel
 from typing import Dict
+import math
+from  pydantic import BaseModel
+from io import BytesIO
+import base64
+class PredictionRequest(BaseModel):
+    x_values: list[float]
+    y_values: list[float]
+    x_to_predict: float
 
 router = APIRouter()
 
@@ -139,6 +147,8 @@ def predict_mental_health(avg_daily_usage: float = Query(..., description="Horas
             "interpretacion_coeficiente": f"Cada hora adicional de uso diario se asocia con un cambio de {round(coef, 2)} puntos en el puntaje de salud mental (escala 0-10)."
         }
     })
+
+
 @router.get('/predict/mental_health/plot')
 def get_plot():
     img_path = 'prediction.png'
@@ -161,45 +171,34 @@ def get_csv_heads():
         raise HTTPException(status_code=500, detail=f"Error al leer el archivo CSV: {str(e)}")
 
 
-@router.get('/predict/modular-prediction')
-def predict_modular_prediction(
-    avg_daily_usage: float = Query(..., description="Horas promedio de uso diario de redes sociales"),
-    heads: list[str] = Query(..., description="Lista de dos nombres de columnas del CSV en el orden [X, y]")
-):
-    if len(heads) != 2:
-        raise HTTPException(status_code=400, detail="Debe proporcionar exactamente dos nombres de columnas.")
-
-    try:
-        csv_path = get_latest_csv_path()
-        df = pd.read_csv(csv_path)
-        X = df[[heads[0]]].values
-        y = df[heads[1]].values
-
-        model = LinearRegression()
-        model.fit(X, y)
-        pred = model.predict(np.array([[avg_daily_usage]]))[0]
-
-        plt.figure(figsize=(8,5))
-        plt.scatter(X, y, color='blue', label='Datos reales')
-        plt.plot(X, model.predict(X), color='red', label='Regresión lineal')
-        plt.scatter([avg_daily_usage], [pred], color='green', label='Predicción')
-        plt.xlabel(heads[0])
-        plt.ylabel(heads[1])
-        plt.title(f'Predicción de {heads[1]} vs {heads[0]}')
-        plt.legend()
-        img_path = 'prediction.png'
-        plt.savefig(img_path)
-        plt.close()
-    except Exception as e:
-        raise HTTPException(status_code=500, detail=f"Error durante predicción o graficación: {str(e)}")
-
-    return JSONResponse({
-        "prediccion": pred,
-        "grafica_url": "/predict/mental_health/plot"
-    })
 
 @router.post("/predict/linear-multiple")
 def linear_multiple(data: LinearMultiFeatureRequest):
+    """
+    Endpoint para realizar predicciones utilizando un modelo de regresión lineal múltiple.
+
+    Este endpoint permite entrenar un modelo de regresión lineal múltiple basado en un conjunto de datos cargado desde un archivo CSV.
+    Luego, realiza una predicción utilizando las características proporcionadas por el usuario.
+
+    Parámetros:
+    - `data` (LinearMultiFeatureRequest): Objeto que contiene:
+        - `features` (Dict[str, float]): Un diccionario donde las claves son los nombres de las columnas de características (X) y los valores son los valores correspondientes.
+        - `target` (str): El nombre de la columna objetivo (y) en el conjunto de datos.
+
+    Respuesta:
+    - `features_utilizados` (list[str]): Lista de las características utilizadas para entrenar el modelo.
+    - `prediccion` (float): El valor predicho para la columna objetivo basado en las características proporcionadas.
+    - `grafica_url` (str): URL para acceder a la gráfica generada.
+    - `resumen` (str): Un resumen interpretativo del valor predicho.
+
+    Errores:
+    - 400: Si la columna objetivo no es válida o si ninguna de las características proporcionadas está disponible en el CSV.
+    - 500: Si ocurre un error al cargar el CSV, entrenar el modelo o realizar la predicción.
+
+    Notas:
+    - El modelo se entrena dinámicamente cada vez que se llama al endpoint.
+    - Si hay más de dos características, no se genera una gráfica.
+    """
     try:
         path = get_latest_csv_path()
         df = pd.read_csv(path)
@@ -287,55 +286,137 @@ def linear_multiple(data: LinearMultiFeatureRequest):
         "resumen": resumen
     })
 
-
-@router.get("/predict/linear-multiple/plot")
-def get_linear_multi_plot():
+@router.get('/predict/linear-multiple/plot')
+def get_linear_multiple_plot():
     img_path = os.path.join(GRAPH_DIR, "linear_plot_multi.png")
     if os.path.exists(img_path):
-        return FileResponse(img_path, media_type="image/png")
+        return FileResponse(img_path, media_type='image/png')
     raise HTTPException(status_code=404, detail="No hay gráfica generada")
+  
 
-@router.get('/predict/linear-dynamic')
-def predict_linear_dynamic(
-    feature_col: str = Query(..., description="Nombre de la columna feature (X)"),
-    target_col: str = Query(..., description="Nombre de la columna target (y)"),
-    feature_value: float = Query(..., description="Valor de la feature para predecir")
+
+def sanitize_json(data):
+    if isinstance(data, dict):
+        return {k: sanitize_json(v) for k, v in data.items()}
+    elif isinstance(data, list):
+        return [sanitize_json(v) for v in data]
+    elif isinstance(data, float) and (math.isnan(data) or math.isinf(data)):
+        return None  # Replace invalid float values with None
+    return data
+
+@router.get('/social-media/analysis')
+def get_social_media_analysis(
+    age_range: str = Query("18-25", description="Rango de edad (formato 'min-max')"),
+    country: str = Query(None, description="País a filtrar (opcional)"),
+    academic_level: str = Query(None, description="Nivel académico", enum=["High School", "Undergraduate", "Graduate"])
 ):
+    """
+    Análisis del impacto de redes sociales basado en el dataset proporcionado.
+    Proporciona estadísticas sobre:
+    - Uso diario promedio
+    - Efecto en rendimiento académico
+    - Salud mental
+    - Adicción
+    - Plataformas más utilizadas
+    Los datos incluyen correlaciones y análisis segmentados por:
+    - Edad
+    - País
+    - Nivel académico
+    """
     try:
-        csv_path = get_latest_csv_path()
+        # Leer el archivo CSV desde la carpeta CSV
+        csv_path = os.path.join(CSV_DIR, 'datos_encoded.csv')
         df = pd.read_csv(csv_path)
-    except Exception as e:
-        raise HTTPException(status_code=500, detail=f"Error al cargar el CSV: {str(e)}")
 
-    if feature_col not in df.columns or target_col not in df.columns:
-        raise HTTPException(status_code=400, detail="Las columnas especificadas no existen en el CSV.")
+        # Procesar parámetros
+        age_min, age_max = map(int, age_range.split('-'))
+        filtered_df = df[(df['Age'] >= age_min) & (df['Age'] <= age_max)]
 
-    try:
-        X = df[[feature_col]].values
-        y = df[target_col].values
-        model = LinearRegression()
-        model.fit(X, y)
-        pred = model.predict(np.array([[feature_value]]))[0]
+        if country:
+            filtered_df = filtered_df[filtered_df['Country'] == country]
 
-        # Graficar
-        plt.figure(figsize=(8, 5))
-        plt.scatter(X, y, color='blue', label='Datos reales')
-        plt.plot(X, model.predict(X), color='red', label='Regresión lineal')
-        plt.scatter([feature_value], [pred], color='green', label='Predicción')
-        plt.xlabel(feature_col)
-        plt.ylabel(target_col)
-        plt.title(f'Predicción de {target_col} vs {feature_col}')
-        plt.legend()
-        img_path = 'prediction.png'
-        plt.savefig(img_path)
+        if academic_level:
+            level_col = f"Academic_Level_{academic_level.replace(' ', '_')}"
+            if level_col in filtered_df.columns:
+                filtered_df = filtered_df[filtered_df[level_col] == 1]
+
+        # Cálculos estadísticos
+        total_students = len(filtered_df)
+        avg_usage = filtered_df['Avg_Daily_Usage_Hours'].mean()
+        affects_performance = filtered_df['Affects_Academic_Performance'].value_counts(normalize=True).get(1, 0) * 100
+        avg_mental_health = filtered_df['Mental_Health_Score'].mean()
+        avg_addiction = filtered_df['Addicted_Score'].mean()
+        avg_sleep = filtered_df['Sleep_Hours_Per_Night'].mean()
+
+        # Plataformas más populares
+        platform_cols = [col for col in df.columns if col.startswith('Most_Used_Platform_')]
+        platform_usage = filtered_df[platform_cols].sum().sort_values(ascending=False)
+        top_platforms = platform_usage.head(3).to_dict()
+
+        # Correlaciones
+        correlation_matrix = filtered_df[['Avg_Daily_Usage_Hours', 'Mental_Health_Score', 
+                                         'Addicted_Score', 'Sleep_Hours_Per_Night']].corr()
+
+        # Segmentación por horas de uso
+        usage_bins = [0, 2, 4, 6, 8, 24]
+        usage_labels = ['0-2h', '2-4h', '4-6h', '6-8h', '8+h']
+        filtered_df['Usage_Category'] = pd.cut(filtered_df['Avg_Daily_Usage_Hours'], 
+                                             bins=usage_bins, labels=usage_labels)
+
+        usage_stats = filtered_df.groupby('Usage_Category').agg({
+            'Mental_Health_Score': 'mean',
+            'Addicted_Score': 'mean',
+            'Affects_Academic_Performance': lambda x: (x == 1).mean() * 100
+        }).reset_index().to_dict('records')
+
+        # Generar gráfico de correlación
+        import seaborn as sns
+        plt.figure(figsize=(10, 8))
+        sns.heatmap(correlation_matrix, annot=True, cmap='coolwarm', center=0)
+        plt.title('Matriz de Correlación')
+        plt.tight_layout()
+        chart_path = os.path.join(GRAPH_DIR, 'social_media_correlation.png')
+        plt.savefig(chart_path)
         plt.close()
 
-        resumen = f"El valor predicho de '{target_col}' para {feature_col}={feature_value} es {round(float(pred), 2)}."
     except Exception as e:
-        raise HTTPException(status_code=500, detail=f"Error durante la predicción o graficación: {str(e)}")
+        raise HTTPException(status_code=500, detail=f"Error analizando datos: {str(e)}")
 
-    return JSONResponse({
-        "prediccion": round(float(pred), 2),
-        "grafica_url": "/predict/mental_health/plot",
-        "resumen": resumen
-    })
+    return JSONResponse(sanitize_json({
+        "summary": {
+            "total_students": total_students,
+            "avg_daily_usage_hours": round(avg_usage, 1),
+            "affects_performance_percentage": round(affects_performance, 1),
+            "avg_mental_health_score": round(avg_mental_health, 1),
+            "avg_addiction_score": round(avg_addiction, 1),
+            "avg_sleep_hours": round(avg_sleep, 1)
+        },
+        "platform_analysis": {
+            "top_platforms": top_platforms,
+            "platform_usage_distribution": platform_usage.to_dict()
+        },
+        "usage_impact": {
+            "by_usage_category": usage_stats,
+            "correlation_usage_mental_health": round(correlation_matrix.loc['Avg_Daily_Usage_Hours', 'Mental_Health_Score'], 2),
+            "correlation_usage_addiction": round(correlation_matrix.loc['Avg_Daily_Usage_Hours', 'Addicted_Score'], 2),
+            "correlation_usage_sleep": round(correlation_matrix.loc['Avg_Daily_Usage_Hours', 'Sleep_Hours_Per_Night'], 2)
+        },
+        "demographic_filters": {
+            "age_range": f"{age_min}-{age_max}",
+            "country": country or "Todos",
+            "academic_level": academic_level or "Todos"
+        },
+        "correlation_chart_url": "/social-media/analysis/correlation-chart",
+        "insights": {
+            "performance_impact": "El uso >4h/día muestra mayor impacto en rendimiento académico",
+            "mental_health_tip": "Cada hora adicional de uso correlaciona con disminución en salud mental",
+            "sleep_quality": "Menos horas de sueño correlacionan con mayor uso de redes sociales"
+        }
+    }))
+
+@router.get('/social-media/analysis/correlation-chart')
+def get_correlation_chart():
+    chart_path = os.path.join(GRAPH_DIR, 'social_media_correlation.png')
+    if os.path.exists(chart_path):
+        return FileResponse(chart_path, media_type='image/png')
+    raise HTTPException(status_code=404, detail="No hay gráfico generado")
