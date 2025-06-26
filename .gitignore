@@ -16,6 +16,9 @@ env3.*/
 .envrc
 .venv/
 
+# Requisitos y dependencias
+requirements.txt
+
 # Variables de entorno
 .env
 *.env
