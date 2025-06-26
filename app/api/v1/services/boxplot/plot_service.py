@@ -30,15 +30,12 @@ def generate_boxplot_with_user_point(user_input: UserBoxplotInput, output_path: 
     
     """ Creamos la gráfica general """
 
-    fig, axes = plt.subplots(nrows=1, ncols=2, figsize=(12, 6), sharey=True)
-    sns.boxplot(data=df, y=eje_y, ax=axes[0])
-    axes[0].set_title(f"Distribución general")
+    plt.figure(figsize=(6, 6))
+    ax = sns.boxplot(data=df, y=eje_y)
 
-    """ Creamos la gráfica del usuario """
-    sns.boxplot(data=df, y=eje_y, ax=axes[1])
-    axes[1].axhline(user_input.sleep_time, color='red', linestyle='--', label='Tu punto')
-    axes[1].set_title("Tu punto en contexto")
-    axes[1].legend()
+    ax.axhline(user_input.sleep_time, color='red', linestyle='--', label='Tu punto')
+    ax.set_title(f"Distribución con tu valor ({user_input.sleep_time})")
+    ax.legend() 
 
     """ Configuraciones generales de la gráfica """
     plt.tight_layout()
