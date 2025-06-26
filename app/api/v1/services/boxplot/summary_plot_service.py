@@ -180,7 +180,7 @@ def generate_summary_statistics(user_value: float, columna: str, df: pd.DataFram
                 )
                 recomendacion = "Busca maneras de priorizar tu descanso. El sueño insuficiente sostenido puede ser perjudicial."
 
-            else:
+            elif user_value > 8:
                 posicion = "Exceso de sueño"
                 interpretacion = (
                     f"Duermes {user_value} horas al día, lo que supera ampliamente las recomendaciones. "
