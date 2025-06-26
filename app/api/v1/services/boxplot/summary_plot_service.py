@@ -5,11 +5,12 @@ Col_Edad = "Age"
 Col_problematica_1 = "Conflicts_Over_Social_Media"
 Col_problematica_2 = "Addicted_Score"
 Col_problematica_3 = "Avg_Daily_Usage_Hours"
+Col_Descanso = "Sleep_Hours_Per_Night"
 
 VARIABLES_PROBLEMATICAS = {
     Col_problematica_1,
     Col_problematica_2,
-    Col_problematica_3,
+    Col_problematica_3
 }
 
 def generate_summary_statistics(user_value: float, columna: str, df: pd.DataFrame) -> dict:
@@ -142,6 +143,50 @@ def generate_summary_statistics(user_value: float, columna: str, df: pd.DataFram
                 "Es una buena etapa para revisar tus metas, mejorar tu bienestar general y compartir tu experiencia con otros."
             )
             recomendacion = "Refuerza lo que has aprendido, mantén tu salud al día y sigue cultivando tus relaciones y aspiraciones."
+
+    if columna == Col_Descanso:
+        diferencia = abs(user_value - 8)
+
+        if diferencia < 0.5:
+            posicion = "Óptimo"
+            interpretacion = (
+                f"Duermes {user_value} horas al día, lo cual es prácticamente ideal. "
+                "Un buen descanso mejora la memoria, el estado de ánimo y la salud en general."
+            )
+            recomendacion = "Sigue manteniendo una rutina de sueño regular. Tu cuerpo y mente te lo agradecen."
+
+        elif diferencia < 1.5:
+            posicion = "Adecuado"
+            interpretacion = (
+                f"Duermes {user_value} horas al día, lo cual está bastante cerca del ideal. "
+                "Es un rango saludable, aunque podrías notar una ligera diferencia si te acercas a 8 horas exactas."
+            )
+            recomendacion = "Intenta afinar tu rutina para alcanzar las 8 horas. Un ajuste pequeño puede marcar la diferencia."
+
+        elif diferencia < 3:
+            posicion = "Subóptimo"
+            interpretacion = (
+                f"Duermes {user_value} horas al día, lo que se aleja un poco del ideal. "
+                "Podrías experimentar efectos leves como cansancio, falta de concentración o irritabilidad."
+            )
+            recomendacion = "Evalúa si puedes ajustar tu tiempo de descanso. Dormir mejor puede impactar positivamente muchas áreas."
+
+        else:
+            if user_value < 8:
+                posicion = "Déficit de sueño"
+                interpretacion = (
+                    f"Duermes solo {user_value} horas al día, lo cual es considerablemente menos de lo recomendado. "
+                    "Esto puede afectar tu salud física, mental y emocional."
+                )
+                recomendacion = "Busca maneras de priorizar tu descanso. El sueño insuficiente sostenido puede ser perjudicial."
+
+            else:
+                posicion = "Exceso de sueño"
+                interpretacion = (
+                    f"Duermes {user_value} horas al día, lo que supera ampliamente las recomendaciones. "
+                    "Dormir demasiado también puede estar asociado con fatiga, bajo ánimo o condiciones médicas subyacentes."
+                )
+                recomendacion = "Observa cómo te sientes al despertar y durante el día. Si el exceso de sueño persiste, consulta a un profesional."
 
     return {
         "columna_analizada": columna,
