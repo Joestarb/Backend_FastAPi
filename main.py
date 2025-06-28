@@ -8,6 +8,7 @@ from app.api.v1.routers.Logistic_Regression import logistic_regression
 from app.api.v1.routers.Linear_Regression import predict
 from app.api.v1.routers.KMeans_Clustering import kmeans_clustering  # NUEVO IMPORT
 from app.api.v1.routers.BoxPlot import boxplot  # Importar el router de BoxPlot
+from app.api.v1.routers.Prediction import prediction_user_form
 
 # Swagger declarado en raíz
 app = FastAPI(
@@ -55,3 +56,7 @@ app.include_router(kmeans_clustering.router, prefix="/api/v1", tags=["K-Means Cl
 # Endpoints de BoxPlot
 # ============================
 app.include_router(boxplot.router, prefix="/api/v1", tags=["BoxPlot"])
+# =====================
+# Endpoints de Predicción de Salud Mental y Adicción
+# =====================
+app.include_router(prediction_user_form.router, prefix="/api/v1", tags=["Predicción de Salud Mental Y adicción"])
