@@ -4,7 +4,7 @@ from typing import Optional
 class FormInputUser(BaseModel):
     Age: int = None
     Avg_Daily_Usage_Hours: float = None
-    Affects_Academic_Performance: bool = None
+    #Affects_Academic_Performance: bool = None
     Sleep_Hours_Per_Night: float = None
     Conflicts_Over_Social_Media: int = None
     Academic_Level_Graduate: bool = None
