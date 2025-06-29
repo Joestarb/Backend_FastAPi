@@ -2,8 +2,6 @@ from fastapi import UploadFile, File, APIRouter, HTTPException
 from fastapi.responses import JSONResponse
 import shutil, os, csv
 import pandas as pd
-import numpy as np
-from pathlib import Path
 
 router = APIRouter()
 
@@ -18,53 +16,80 @@ async def upload_and_process_csv(file: UploadFile = File(...)):
 
     os.makedirs(CSV_FOLDER, exist_ok=True)
 
-    # Limpiar carpeta
-    for f in os.listdir(CSV_FOLDER):
-        file_path = os.path.join(CSV_FOLDER, f)
-        if os.path.isfile(file_path):
-            os.remove(file_path)
+    # Eliminar archivos previos
+    for path in [PRUEBA_PATH, ENCODED_PATH]:
+        if os.path.exists(path):
+            os.remove(path)
 
     try:
-        # Guardar como Prueba.csv
+        # Guardar archivo
         with open(PRUEBA_PATH, "wb") as buffer:
             shutil.copyfileobj(file.file, buffer)
 
-        # Leer CSV
         df = pd.read_csv(PRUEBA_PATH)
+        df.columns = df.columns.str.strip()
 
-        # Listas para los nuevos campos
+        required_cols = ['Avg_Daily_Usage_Hours', 'Sleep_Hours_Per_Night', 'Conflicts_Over_Social_Media']
+        for col in required_cols:
+            if col not in df.columns:
+                raise HTTPException(status_code=422, detail=f"Falta la columna: {col}")
+
+        # Nuevas columnas
         mental_scores = []
         addicted_scores = []
         academic_impacts = []
 
         for _, row in df.iterrows():
-            sleep = row['Sleep_Hours_Per_Night']
-            usage = row['Avg_Daily_Usage_Hours']
+            usage = float(row['Avg_Daily_Usage_Hours'])
+            sleep = float(row['Sleep_Hours_Per_Night'])
+            conflicts = int(row['Conflicts_Over_Social_Media'])
 
-            # Mental Health Score (ideal 8h)
-            mental_score = 10 - abs(8 - sleep) * 1.5
-            mental_score = max(1, min(mental_score, 10))
+            # --- Mental Health Score ---
+            if sleep >= 8:
+                mental = 9
+            elif sleep >= 6:
+                mental = 7
+            else:
+                mental = 4
 
-            # Addicted Score (máximo 10h)
-            addicted_score = (min(usage, 10) / 10) * 10
-            addicted_score = max(1, min(addicted_score, 10))
+            if usage > 6:
+                mental -= 1
+            if conflicts >= 3:
+                mental -= 1
+            mental = max(1, min(mental, 10))
 
-            # Impacto académico
-            performance_impact = addicted_score > 7 and mental_score < 5
+            # --- Addicted Score ---
+            if usage >= 7:
+                addicted = 9
+            elif usage >= 4:
+                addicted = 6
+            else:
+                addicted = 3
 
-            mental_scores.append(round(mental_score, 2))
-            addicted_scores.append(round(addicted_score, 2))
-            academic_impacts.append(performance_impact)
+            if conflicts > 3:
+                addicted += 1
+            if sleep > 7.5:
+                addicted -= 1
+            addicted = max(1, min(addicted, 10))
 
-        # Agregar columnas
+            # --- Affects Academic Performance ---
+            impact = (
+                (mental < 5 and addicted > 6) or
+                (addicted >= 9) or
+                (mental <= 4 and conflicts >= 3)
+            )
+
+            mental_scores.append(mental)
+            addicted_scores.append(addicted)
+            academic_impacts.append(impact)
+
         df['Mental_Health_Score'] = mental_scores
         df['Addicted_Score'] = addicted_scores
         df['Affects_Academic_Performance'] = academic_impacts
 
-        # Guardar como datos_encoded.csv
         df.to_csv(ENCODED_PATH, index=False)
 
-        return {"message": "Archivo guardado como 'Prueba.csv' y procesado como 'datos_encoded.csv'"}
+        return {"message": "Archivo procesado exitosamente con valores fijos."}
 
     except Exception as e:
         raise HTTPException(status_code=500, detail=f"Error al procesar el archivo CSV: {str(e)}")

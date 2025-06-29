@@ -1,22 +1,22 @@
-Student_ID,Age,Country,Avg_Daily_Usage_Hours,Sleep_Hours_Per_Night,Conflicts_Over_Social_Media,Academic_Level_Graduate,Academic_Level_High School,Academic_Level_Undergraduate,Most_Used_Platform_Facebook,Most_Used_Platform_Instagram,Most_Used_Platform_KakaoTalk,Most_Used_Platform_LINE,Most_Used_Platform_LinkedIn,Most_Used_Platform_Snapchat,Most_Used_Platform_TikTok,Most_Used_Platform_Twitter,Most_Used_Platform_VKontakte,Most_Used_Platform_WeChat,Most_Used_Platform_WhatsApp,Most_Used_Platform_YouTube,Relationship_Status_Complicated,Relationship_Status_In Relationship,Relationship_Status_Single,Gender_Female,Gender_Male
+Student_ID,Age,Country,Avg_Daily_Usage_Hours,Sleep_Hours_Per_Night,Conflicts_Over_Social_Media,Academic_Level_Graduate,Academic_Level_High_School,Academic_Level_Undergraduate,Most_Used_Platform_Facebook,Most_Used_Platform_Instagram,Most_Used_Platform_KakaoTalk,Most_Used_Platform_LINE,Most_Used_Platform_LinkedIn,Most_Used_Platform_Snapchat,Most_Used_Platform_TikTok,Most_Used_Platform_Twitter,Most_Used_Platform_VKontakte,Most_Used_Platform_WeChat,Most_Used_Platform_WhatsApp,Most_Used_Platform_YouTube,Relationship_Status_Complicated,Relationship_Status_In_Relationship,Relationship_Status_Single,Gender_Female,Gender_Male
 1,19,Bangladesh,5.2,6.5,3,False,False,True,False,True,False,False,False,False,False,False,False,False,False,False,False,True,False,True,False
 2,22,India,2.1,7.5,0,True,False,False,False,False,False,False,False,False,False,True,False,False,False,False,False,False,True,False,True
-3,20,USA,6.0,5.0,4,False,False,True,False,False,False,False,False,False,True,False,False,False,False,False,True,False,False,True,False
-4,18,UK,3.0,7.0,1,False,True,False,False,False,False,False,False,False,False,False,False,False,False,True,False,False,True,False,True
-5,21,Canada,4.5,6.0,2,True,False,False,True,False,False,False,False,False,False,False,False,False,False,False,False,True,False,False,True
+3,20,USA,6,5,4,False,False,True,False,False,False,False,False,False,True,False,False,False,False,False,True,False,False,True,False
+4,18,UK,3,7,1,False,True,False,False,False,False,False,False,False,False,False,False,False,False,True,False,False,True,False,True
+5,21,Canada,4.5,6,2,True,False,False,True,False,False,False,False,False,False,False,False,False,False,False,False,True,False,False,True
 6,19,Australia,7.2,4.5,5,False,False,True,False,True,False,False,False,False,False,False,False,False,False,False,True,False,False,True,False
-7,23,Germany,1.5,8.0,0,True,False,False,False,False,False,False,True,False,False,False,False,False,False,False,False,False,True,False,True
-8,20,Brazil,5.8,6.0,2,False,False,True,False,False,False,False,False,True,False,False,False,False,False,False,False,True,False,True,False
-9,18,Japan,4.0,6.5,1,False,True,False,False,False,False,False,False,False,True,False,False,False,False,False,False,False,True,False,True
-10,21,South Korea,3.3,7.0,1,True,False,False,False,True,False,False,False,False,False,False,False,False,False,False,False,True,False,True,False
+7,23,Germany,1.5,8,0,True,False,False,False,False,False,False,True,False,False,False,False,False,False,False,False,False,True,False,True
+8,20,Brazil,5.8,6,2,False,False,True,False,False,False,False,False,True,False,False,False,False,False,False,False,True,False,True,False
+9,18,Japan,4,6.5,1,False,True,False,False,False,False,False,False,False,True,False,False,False,False,False,False,False,True,False,True
+10,21,South Korea,3.3,7,1,True,False,False,False,True,False,False,False,False,False,False,False,False,False,False,False,True,False,True,False
 11,19,France,4.8,6.2,3,False,False,True,False,False,False,False,False,True,False,False,False,False,False,False,True,False,False,False,True
 12,20,Spain,5.5,5.8,2,False,False,True,False,False,False,False,False,False,True,False,False,False,False,False,False,True,False,True,False
 13,22,Italy,2.8,7.2,1,True,False,False,False,False,False,False,True,False,False,False,False,False,False,False,False,False,True,False,True
 14,18,Mexico,6.5,5.5,4,False,True,False,False,True,False,False,False,False,False,False,False,False,False,False,False,False,True,True,False
 15,21,Russia,3.7,6.8,2,False,False,True,False,False,False,False,False,False,False,False,False,False,False,True,False,True,False,False,True
-16,20,China,4.2,6.0,3,False,False,True,False,False,False,False,False,False,True,False,False,False,False,False,True,False,False,True,False
-17,24,Sweden,2.0,7.8,0,True,False,False,False,False,False,False,True,False,False,False,False,False,False,False,False,False,True,False,True
-18,19,Norway,5.0,5.7,3,False,True,False,False,True,False,False,False,False,False,False,False,False,False,False,False,True,False,True,False
+16,20,China,4.2,6,3,False,False,True,False,False,False,False,False,False,True,False,False,False,False,False,True,False,False,True,False
+17,24,Sweden,2,7.8,0,True,False,False,False,False,False,False,True,False,False,False,False,False,False,False,False,False,True,False,True
+18,19,Norway,5,5.7,3,False,True,False,False,True,False,False,False,False,False,False,False,False,False,False,False,True,False,True,False
 19,21,Denmark,3.5,6.7,1,False,False,True,True,False,False,False,False,False,False,False,False,False,False,False,False,False,True,False,True
 20,20,Netherlands,4.7,5.9,3,False,False,True,False,False,False,False,False,True,False,False,False,False,False,False,True,False,False,True,False
 21,18,Belgium,5.3,5.5,4,False,True,False,False,False,False,False,False,False,True,False,False,False,False,False,False,False,True,False,True
@@ -56,12 +56,12 @@ Student_ID,Age,Country,Avg_Daily_Usage_Hours,Sleep_Hours_Per_Night,Conflicts_Ove
 55,21,Panama,3.6,6.5,2,False,False,True,True,False,False,False,False,False,False,False,False,False,False,False,False,True,False,False,True
 56,20,Jamaica,4.9,5.6,3,False,False,True,False,False,False,False,False,True,False,False,False,False,False,False,True,False,False,True,False
 57,18,Trinidad,5.6,5.2,4,False,True,False,False,False,False,False,False,False,True,False,False,False,False,False,False,False,True,False,True
-58,23,Bahamas,2.8,7.0,1,True,False,False,False,False,False,False,True,False,False,False,False,False,False,False,False,True,False,True,False
+58,23,Bahamas,2.8,7,1,True,False,False,False,False,False,False,True,False,False,False,False,False,False,False,False,True,False,True,False
 59,19,Iceland,4.6,5.9,3,False,False,True,False,True,False,False,False,False,False,False,False,False,False,False,True,False,False,False,True
 60,20,Finland,5.4,5.7,4,False,False,True,False,False,False,False,False,False,True,False,False,False,False,False,False,False,True,True,False
 61,22,Poland,3.1,7.1,1,True,False,False,True,False,False,False,False,False,False,False,False,False,False,False,False,False,True,False,True
 62,19,Romania,5.6,5.6,3,False,False,True,False,True,False,False,False,False,False,False,False,False,False,False,False,True,False,True,False
-63,20,Hungary,4.2,6.0,3,False,False,True,False,False,False,False,False,False,True,False,False,False,False,False,True,False,False,False,True
+63,20,Hungary,4.2,6,3,False,False,True,False,False,False,False,False,False,True,False,False,False,False,False,True,False,False,False,True
 64,18,Czech Republic,6.1,5.2,4,False,True,False,False,False,False,False,False,True,False,False,False,False,False,False,False,False,True,True,False
 65,23,Slovakia,2.3,7.4,1,True,False,False,False,False,False,False,True,False,False,False,False,False,False,False,False,True,False,False,True
 66,21,Croatia,4.8,5.8,3,False,False,True,False,True,False,False,False,False,False,False,False,False,False,False,False,False,True,True,False
@@ -76,10 +76,10 @@ Student_ID,Age,Country,Avg_Daily_Usage_Hours,Sleep_Hours_Per_Night,Conflicts_Ove
 75,23,Belarus,2.5,7.3,1,True,False,False,False,False,False,False,True,False,False,False,False,False,False,False,False,True,False,False,True
 76,21,Kazakhstan,4.6,5.8,3,False,False,True,False,False,False,False,False,True,False,False,False,False,False,False,False,False,True,True,False
 77,19,Uzbekistan,5.5,5.4,4,False,True,False,False,False,False,False,False,False,True,False,False,False,False,False,True,False,False,False,True
-78,22,Kyrgyzstan,2.9,7.0,2,True,False,False,True,False,False,False,False,False,False,False,False,False,False,False,False,True,False,True,False
+78,22,Kyrgyzstan,2.9,7,2,True,False,False,True,False,False,False,False,False,False,False,False,False,False,False,False,True,False,True,False
 79,20,Tajikistan,4.7,5.9,3,False,False,True,False,False,False,False,False,False,False,False,False,False,False,True,False,False,True,False,True
 80,18,Armenia,5.9,5.2,4,False,True,False,False,True,False,False,False,False,False,False,False,False,False,False,True,False,False,True,False
-81,21,Georgia,3.0,7.1,1,True,False,False,False,False,False,False,True,False,False,False,False,False,False,False,False,True,False,False,True
+81,21,Georgia,3,7.1,1,True,False,False,False,False,False,False,True,False,False,False,False,False,False,False,False,True,False,False,True
 82,19,Azerbaijan,4.8,5.7,3,False,False,True,False,False,False,False,False,False,True,False,False,False,False,False,False,False,True,True,False
 83,20,Cyprus,3.8,6.6,2,False,False,True,True,False,False,False,False,False,False,False,False,False,False,False,True,False,False,False,True
 84,22,Malta,2.7,7.2,1,True,False,False,False,False,False,False,True,False,False,False,False,False,False,False,False,True,False,True,False
@@ -87,9 +87,9 @@ Student_ID,Age,Country,Avg_Daily_Usage_Hours,Sleep_Hours_Per_Night,Conflicts_Ove
 86,21,Monaco,4.5,5.8,3,False,False,True,False,True,False,False,False,False,False,False,False,False,False,False,True,False,False,True,False
 87,19,Andorra,5.3,5.5,4,False,True,False,False,False,False,False,False,False,True,False,False,False,False,False,False,True,False,False,True
 88,23,San Marino,2.6,7.3,1,True,False,False,False,False,False,False,True,False,False,False,False,False,False,False,False,False,True,True,False
-89,20,Vatican City,4.4,6.0,3,False,False,True,False,False,False,False,False,False,False,False,False,False,False,True,True,False,False,False,True
+89,20,Vatican City,4.4,6,3,False,False,True,False,False,False,False,False,False,False,False,False,False,False,True,True,False,False,False,True
 90,18,Liechtenstein,5.8,5.2,4,False,True,False,False,True,False,False,False,False,False,False,False,False,False,False,False,False,True,True,False
-91,22,Montenegro,2.9,7.0,2,True,False,False,True,False,False,False,False,False,False,False,False,False,False,False,False,True,False,False,True
+91,22,Montenegro,2.9,7,2,True,False,False,True,False,False,False,False,False,False,False,False,False,False,False,False,True,False,False,True
 92,19,Albania,4.7,5.8,3,False,False,True,False,False,False,False,False,False,True,False,False,False,False,False,True,False,False,True,False
 93,21,North Macedonia,3.7,6.5,2,False,False,True,False,False,False,False,False,True,False,False,False,False,False,False,False,False,True,False,True
 94,20,Kosovo,5.5,5.4,4,False,True,False,False,True,False,False,False,False,False,False,False,False,False,False,False,True,False,True,False
@@ -103,7 +103,7 @@ Student_ID,Age,Country,Avg_Daily_Usage_Hours,Sleep_Hours_Per_Night,Conflicts_Ove
 102,23,Iraq,2.5,7.3,1,True,False,False,False,False,False,False,True,False,False,False,False,False,False,False,False,False,True,True,False
 103,20,Yemen,4.7,5.8,3,False,False,True,True,False,False,False,False,False,False,False,False,False,False,False,False,True,False,False,True
 104,18,Syria,5.6,5.4,4,False,True,False,False,True,False,False,False,False,False,False,False,False,False,False,False,False,True,True,False
-105,22,Afghanistan,2.9,7.0,2,True,False,False,False,False,False,False,True,False,False,False,False,False,False,False,True,False,False,False,True
+105,22,Afghanistan,2.9,7,2,True,False,False,False,False,False,False,True,False,False,False,False,False,False,False,True,False,False,False,True
 106,19,Pakistan,4.8,5.7,3,False,False,True,False,False,False,False,False,False,True,False,False,False,False,False,False,True,False,True,False
 107,21,Nepal,3.8,6.6,2,False,False,True,False,False,False,False,False,False,False,False,False,False,False,True,False,False,True,False,True
 108,20,Bhutan,5.5,5.5,4,False,True,False,False,False,False,False,False,True,False,False,False,False,False,False,True,False,False,True,False
@@ -112,10 +112,10 @@ Student_ID,Age,Country,Avg_Daily_Usage_Hours,Sleep_Hours_Per_Night,Conflicts_Ove
 111,20,Bangladesh,6.1,6.2,4,False,False,True,False,True,False,False,False,False,False,False,False,False,False,False,False,False,True,False,True
 112,21,India,5.8,5.9,3,False,False,True,False,False,False,False,False,False,True,False,False,False,False,False,False,True,False,True,False
 113,19,Nepal,4.9,7.1,2,False,False,True,True,False,False,False,False,False,False,False,False,False,False,False,False,False,True,False,True
-114,22,Pakistan,5.5,6.0,4,True,False,False,False,True,False,False,False,False,False,False,False,False,False,False,False,False,True,True,False
+114,22,Pakistan,5.5,6,4,True,False,False,False,True,False,False,False,False,False,False,False,False,False,False,False,False,True,True,False
 115,20,Sri Lanka,5.2,6.3,3,False,False,True,False,False,False,False,False,False,True,False,False,False,False,False,False,True,False,False,True
 116,19,Maldives,4.8,7.2,2,False,False,True,False,True,False,False,False,False,False,False,False,False,False,False,False,False,True,True,False
-117,21,Bangladesh,6.0,5.8,4,True,False,False,True,False,False,False,False,False,False,False,False,False,False,False,False,True,False,False,True
+117,21,Bangladesh,6,5.8,4,True,False,False,True,False,False,False,False,False,False,False,False,False,False,False,False,True,False,False,True
 118,20,India,5.7,6.1,3,False,False,True,False,True,False,False,False,False,False,False,False,False,False,False,False,False,True,True,False
 119,22,Nepal,4.7,7.3,2,True,False,False,False,False,False,False,False,False,True,False,False,False,False,False,False,False,True,False,True
 120,19,Pakistan,5.4,6.2,4,False,False,True,False,True,False,False,False,False,False,False,False,False,False,False,False,True,False,True,False
@@ -130,7 +130,7 @@ Student_ID,Age,Country,Avg_Daily_Usage_Hours,Sleep_Hours_Per_Night,Conflicts_Ove
 129,22,Bangladesh,5.1,6.5,4,True,False,False,True,False,False,False,False,False,False,False,False,False,False,False,False,False,True,False,True
 130,21,India,5.6,5.6,3,True,False,False,False,True,False,False,False,False,False,False,False,False,False,False,False,True,False,True,False
 131,19,Nepal,4.3,7.7,2,False,False,True,False,False,False,False,False,False,True,False,False,False,False,False,False,False,True,False,True
-132,20,Pakistan,5.0,6.6,4,False,False,True,False,True,False,False,False,False,False,False,False,False,False,False,False,True,False,True,False
+132,20,Pakistan,5,6.6,4,False,False,True,False,True,False,False,False,False,False,False,False,False,False,False,False,True,False,True,False
 133,22,Sri Lanka,5.5,5.5,3,True,False,False,True,False,False,False,False,False,False,False,False,False,False,False,False,False,True,False,True
 134,21,Maldives,4.2,7.8,2,True,False,False,False,True,False,False,False,False,False,False,False,False,False,False,False,True,False,True,False
 135,19,Bangladesh,4.9,6.7,4,False,False,True,False,False,False,False,False,False,True,False,False,False,False,False,False,False,True,False,True
@@ -138,15 +138,15 @@ Student_ID,Age,Country,Avg_Daily_Usage_Hours,Sleep_Hours_Per_Night,Conflicts_Ove
 137,22,Nepal,4.1,7.9,2,True,False,False,True,False,False,False,False,False,False,False,False,False,False,False,False,False,True,False,True
 138,21,Pakistan,4.8,6.8,4,True,False,False,False,True,False,False,False,False,False,False,False,False,False,False,False,True,False,True,False
 139,19,Sri Lanka,5.3,5.3,3,False,False,True,False,False,False,False,False,False,True,False,False,False,False,False,False,False,True,False,True
-140,20,Maldives,4.0,8.0,2,False,False,True,False,True,False,False,False,False,False,False,False,False,False,False,False,True,False,True,False
+140,20,Maldives,4,8,2,False,False,True,False,True,False,False,False,False,False,False,False,False,False,False,False,True,False,True,False
 141,22,Bangladesh,4.7,6.9,4,True,False,False,True,False,False,False,False,False,False,False,False,False,False,False,False,False,True,False,True
 142,21,India,5.2,5.2,3,True,False,False,False,True,False,False,False,False,False,False,False,False,False,False,False,True,False,True,False
 143,19,Nepal,3.9,8.1,2,False,False,True,False,False,False,False,False,False,True,False,False,False,False,False,False,False,True,False,True
-144,20,Pakistan,4.6,7.0,4,False,False,True,False,True,False,False,False,False,False,False,False,False,False,False,False,True,False,True,False
+144,20,Pakistan,4.6,7,4,False,False,True,False,True,False,False,False,False,False,False,False,False,False,False,False,True,False,True,False
 145,22,Sri Lanka,5.1,5.1,3,True,False,False,True,False,False,False,False,False,False,False,False,False,False,False,False,False,True,False,True
 146,21,Maldives,3.8,8.2,2,True,False,False,False,True,False,False,False,False,False,False,False,False,False,False,False,True,False,True,False
 147,19,Bangladesh,4.5,7.1,4,False,False,True,False,False,False,False,False,False,True,False,False,False,False,False,False,False,True,False,True
-148,20,India,5.0,5.0,3,False,False,True,False,True,False,False,False,False,False,False,False,False,False,False,False,True,False,True,False
+148,20,India,5,5,3,False,False,True,False,True,False,False,False,False,False,False,False,False,False,False,False,True,False,True,False
 149,22,Nepal,3.7,8.3,2,True,False,False,True,False,False,False,False,False,False,False,False,False,False,False,False,False,True,False,True
 150,21,Pakistan,4.4,7.2,4,True,False,False,False,True,False,False,False,False,False,False,False,False,False,False,False,True,False,True,False
 151,19,Sri Lanka,4.9,4.9,3,False,False,True,False,False,False,False,False,False,True,False,False,False,False,False,False,False,True,False,True
@@ -163,13 +163,13 @@ Student_ID,Age,Country,Avg_Daily_Usage_Hours,Sleep_Hours_Per_Night,Conflicts_Ove
 162,21,India,4.8,7.2,2,True,False,False,True,False,False,False,False,False,False,False,False,False,False,False,False,True,False,False,True
 163,20,Nepal,5.5,5.9,4,False,False,True,False,False,False,False,False,False,True,False,False,False,False,False,False,False,True,True,False
 164,22,Pakistan,4.7,6.3,3,True,False,False,False,True,False,False,False,False,False,False,False,False,False,False,False,True,False,False,True
-165,19,Sri Lanka,5.1,7.0,2,False,False,True,True,False,False,False,False,False,False,False,False,False,False,False,False,False,True,True,False
-166,21,Maldives,5.4,6.0,4,True,False,False,False,False,False,False,False,False,True,False,False,False,False,False,False,True,False,False,True
+165,19,Sri Lanka,5.1,7,2,False,False,True,True,False,False,False,False,False,False,False,False,False,False,False,False,False,True,True,False
+166,21,Maldives,5.4,6,4,True,False,False,False,False,False,False,False,False,True,False,False,False,False,False,False,True,False,False,True
 167,20,Bangladesh,4.9,6.4,3,False,False,True,False,True,False,False,False,False,False,False,False,False,False,False,False,False,True,True,False
 168,22,India,5.2,7.1,2,True,False,False,True,False,False,False,False,False,False,False,False,False,False,False,False,True,False,False,True
 169,19,Nepal,5.6,5.8,4,False,False,True,False,False,False,False,False,False,True,False,False,False,False,False,False,False,True,True,False
 170,21,Pakistan,4.6,6.5,3,True,False,False,False,True,False,False,False,False,False,False,False,False,False,False,False,True,False,False,True
-171,20,Sri Lanka,5.0,7.3,2,False,False,True,True,False,False,False,False,False,False,False,False,False,False,False,False,False,True,True,False
+171,20,Sri Lanka,5,7.3,2,False,False,True,True,False,False,False,False,False,False,False,False,False,False,False,False,False,True,True,False
 172,22,Maldives,5.3,5.7,4,True,False,False,False,False,False,False,False,False,True,False,False,False,False,False,False,True,False,False,True
 173,19,Bangladesh,4.8,6.6,3,False,False,True,False,True,False,False,False,False,False,False,False,False,False,False,False,False,True,True,False
 174,21,India,5.1,7.4,2,True,False,False,True,False,False,False,False,False,False,False,False,False,False,False,False,True,False,False,True
@@ -178,20 +178,20 @@ Student_ID,Age,Country,Avg_Daily_Usage_Hours,Sleep_Hours_Per_Night,Conflicts_Ove
 177,19,Sri Lanka,4.9,7.5,2,False,False,True,True,False,False,False,False,False,False,False,False,False,False,False,False,False,True,True,False
 178,21,Maldives,5.2,5.5,4,True,False,False,False,False,False,False,False,False,True,False,False,False,False,False,False,True,False,False,True
 179,20,Bangladesh,4.7,6.8,3,False,False,True,False,True,False,False,False,False,False,False,False,False,False,False,False,False,True,True,False
-180,22,India,5.0,7.6,2,True,False,False,True,False,False,False,False,False,False,False,False,False,False,False,False,True,False,False,True
+180,22,India,5,7.6,2,True,False,False,True,False,False,False,False,False,False,False,False,False,False,False,False,True,False,False,True
 181,19,Nepal,5.8,5.4,4,False,False,True,False,False,False,False,False,False,True,False,False,False,False,False,False,False,True,True,False
 182,21,Pakistan,4.4,6.9,3,True,False,False,False,True,False,False,False,False,False,False,False,False,False,False,False,True,False,False,True
 183,20,Sri Lanka,4.8,7.7,2,False,False,True,True,False,False,False,False,False,False,False,False,False,False,False,False,False,True,True,False
 184,22,Maldives,5.1,5.3,4,True,False,False,False,False,False,False,False,False,True,False,False,False,False,False,False,True,False,False,True
-185,19,Bangladesh,4.6,7.0,3,False,False,True,False,True,False,False,False,False,False,False,False,False,False,False,False,False,True,True,False
+185,19,Bangladesh,4.6,7,3,False,False,True,False,True,False,False,False,False,False,False,False,False,False,False,False,False,True,True,False
 186,21,India,4.9,7.8,2,True,False,False,True,False,False,False,False,False,False,False,False,False,False,False,False,True,False,False,True
 187,20,Nepal,5.9,5.2,4,False,False,True,False,False,False,False,False,False,True,False,False,False,False,False,False,False,True,True,False
 188,22,Pakistan,4.3,7.1,3,True,False,False,False,True,False,False,False,False,False,False,False,False,False,False,False,True,False,False,True
 189,19,Sri Lanka,4.7,7.9,2,False,False,True,True,False,False,False,False,False,False,False,False,False,False,False,False,False,True,True,False
-190,21,Maldives,5.0,5.1,4,True,False,False,False,False,False,False,False,False,True,False,False,False,False,False,False,True,False,False,True
+190,21,Maldives,5,5.1,4,True,False,False,False,False,False,False,False,False,True,False,False,False,False,False,False,True,False,False,True
 191,20,Bangladesh,4.5,7.2,3,False,False,True,False,True,False,False,False,False,False,False,False,False,False,False,False,False,True,True,False
-192,22,India,4.8,8.0,2,True,False,False,True,False,False,False,False,False,False,False,False,False,False,False,False,True,False,False,True
-193,19,Nepal,6.0,5.0,4,False,False,True,False,False,False,False,False,False,True,False,False,False,False,False,False,False,True,True,False
+192,22,India,4.8,8,2,True,False,False,True,False,False,False,False,False,False,False,False,False,False,False,False,True,False,False,True
+193,19,Nepal,6,5,4,False,False,True,False,False,False,False,False,False,True,False,False,False,False,False,False,False,True,True,False
 194,21,Pakistan,4.2,7.3,3,True,False,False,False,True,False,False,False,False,False,False,False,False,False,False,False,True,False,False,True
 195,20,Sri Lanka,4.6,8.1,2,False,False,True,True,False,False,False,False,False,False,False,False,False,False,False,False,False,True,True,False
 196,22,Maldives,4.9,4.9,4,True,False,False,False,False,False,False,False,False,True,False,False,False,False,False,False,True,False,False,True
@@ -204,7 +204,7 @@ Student_ID,Age,Country,Avg_Daily_Usage_Hours,Sleep_Hours_Per_Night,Conflicts_Ove
 203,20,Bangladesh,4.3,7.6,3,False,False,True,False,True,False,False,False,False,False,False,False,False,False,False,False,False,True,True,False
 204,22,India,4.6,8.4,2,True,False,False,True,False,False,False,False,False,False,False,False,False,False,False,False,True,False,False,True
 205,19,Nepal,6.2,4.6,4,False,False,True,False,False,False,False,False,False,True,False,False,False,False,False,False,False,True,True,False
-206,21,Pakistan,4.0,7.7,3,True,False,False,False,True,False,False,False,False,False,False,False,False,False,False,False,True,False,False,True
+206,21,Pakistan,4,7.7,3,True,False,False,False,True,False,False,False,False,False,False,False,False,False,False,False,True,False,False,True
 207,20,Sri Lanka,4.4,8.5,2,False,False,True,True,False,False,False,False,False,False,False,False,False,False,False,False,False,True,True,False
 208,22,Maldives,4.7,4.5,4,True,False,False,False,False,False,False,False,False,True,False,False,False,False,False,False,True,False,False,True
 209,19,Bangladesh,4.2,7.8,3,False,False,True,False,True,False,False,False,False,False,False,False,False,False,False,False,False,True,True,False
@@ -213,13 +213,13 @@ Student_ID,Age,Country,Avg_Daily_Usage_Hours,Sleep_Hours_Per_Night,Conflicts_Ove
 212,22,Pakistan,3.9,7.9,3,True,False,False,False,True,False,False,False,False,False,False,False,False,False,False,False,True,False,False,True
 213,19,Sri Lanka,4.3,8.7,2,False,False,True,True,False,False,False,False,False,False,False,False,False,False,False,False,False,True,True,False
 214,21,Maldives,4.6,4.3,4,True,False,False,False,False,False,False,False,False,True,False,False,False,False,False,False,True,False,False,True
-215,20,Bangladesh,4.1,8.0,3,False,False,True,False,True,False,False,False,False,False,False,False,False,False,False,False,False,True,True,False
+215,20,Bangladesh,4.1,8,3,False,False,True,False,True,False,False,False,False,False,False,False,False,False,False,False,False,True,True,False
 216,22,India,4.4,8.8,2,True,False,False,True,False,False,False,False,False,False,False,False,False,False,False,False,True,False,False,True
 217,19,Nepal,6.4,4.2,4,False,False,True,False,False,False,False,False,False,True,False,False,False,False,False,False,False,True,True,False
 218,21,Pakistan,3.8,8.1,3,True,False,False,False,True,False,False,False,False,False,False,False,False,False,False,False,True,False,False,True
 219,20,Sri Lanka,4.2,8.9,2,False,False,True,True,False,False,False,False,False,False,False,False,False,False,False,False,False,True,True,False
 220,22,Maldives,4.5,4.1,4,True,False,False,False,False,False,False,False,False,True,False,False,False,False,False,False,True,False,False,True
-221,19,USA,6.5,6.0,4,False,False,True,False,True,False,False,False,False,False,False,False,False,False,False,False,False,True,True,False
+221,19,USA,6.5,6,4,False,False,True,False,True,False,False,False,False,False,False,False,False,False,False,False,False,True,True,False
 222,21,UK,5.8,6.5,3,True,False,False,False,False,False,False,False,False,True,False,False,False,False,False,False,True,False,False,True
 223,20,Australia,4.5,7.5,2,False,False,True,False,True,False,False,False,False,False,False,False,False,False,False,False,False,True,True,False
 224,22,Germany,4.2,7.8,2,True,False,False,True,False,False,False,False,False,False,False,False,False,False,False,False,True,False,False,True
@@ -227,13 +227,13 @@ Student_ID,Age,Country,Avg_Daily_Usage_Hours,Sleep_Hours_Per_Night,Conflicts_Ove
 226,21,Italy,5.5,6.8,3,True,False,False,False,True,False,False,False,False,False,False,False,False,False,False,False,False,True,False,True
 227,20,South Korea,5.2,6.5,3,False,False,True,False,False,True,False,False,False,False,False,False,False,False,False,False,True,False,True,False
 228,22,Russia,4.8,7.2,2,True,False,False,False,False,False,False,False,False,False,False,True,False,False,False,False,False,True,False,True
-229,19,USA,7.0,5.8,4,False,False,True,False,False,False,False,False,False,True,False,False,False,False,False,False,True,False,True,False
+229,19,USA,7,5.8,4,False,False,True,False,False,False,False,False,False,True,False,False,False,False,False,False,True,False,True,False
 230,21,UK,5.5,6.7,3,True,False,False,False,True,False,False,False,False,False,False,False,False,False,False,False,False,True,False,True
 231,20,Australia,4.7,7.4,2,False,False,True,True,False,False,False,False,False,False,False,False,False,False,False,False,True,False,True,False
-232,22,Germany,4.0,7.9,1,True,False,False,False,True,False,False,False,False,False,False,False,False,False,False,False,False,True,False,True
-233,19,Japan,3.5,8.0,1,False,False,True,False,False,False,True,False,False,False,False,False,False,False,False,False,False,True,True,False
+232,22,Germany,4,7.9,1,True,False,False,False,True,False,False,False,False,False,False,False,False,False,False,False,False,True,False,True
+233,19,Japan,3.5,8,1,False,False,True,False,False,False,True,False,False,False,False,False,False,False,False,False,False,True,True,False
 234,21,Italy,5.7,6.5,3,True,False,False,False,False,False,False,False,False,True,False,False,False,False,False,False,True,False,False,True
-235,20,South Korea,5.0,6.8,3,False,False,True,False,False,True,False,False,False,False,False,False,False,False,False,False,False,True,True,False
+235,20,South Korea,5,6.8,3,False,False,True,False,False,True,False,False,False,False,False,False,False,False,False,False,False,True,True,False
 236,22,Russia,4.5,7.4,2,True,False,False,False,False,False,False,False,False,False,False,True,False,False,False,False,True,False,False,True
 237,19,USA,6.8,5.9,4,False,False,True,False,True,False,False,False,False,False,False,False,False,False,False,False,False,True,True,False
 238,21,UK,5.6,6.6,3,True,False,False,True,False,False,False,False,False,False,False,False,False,False,False,False,True,False,False,True
@@ -254,10 +254,10 @@ Student_ID,Age,Country,Avg_Daily_Usage_Hours,Sleep_Hours_Per_Night,Conflicts_Ove
 253,19,USA,6.7,5.8,4,False,False,True,False,True,False,False,False,False,False,False,False,False,False,False,False,False,True,True,False
 254,21,UK,5.4,6.5,3,True,False,False,True,False,False,False,False,False,False,False,False,False,False,False,False,True,False,False,True
 255,20,Australia,4.4,7.4,2,False,False,True,False,True,False,False,False,False,False,False,False,False,False,False,False,False,True,True,False
-256,22,Germany,4.0,7.6,2,True,False,False,True,False,False,False,False,False,False,False,False,False,False,False,False,True,False,False,True
+256,22,Germany,4,7.6,2,True,False,False,True,False,False,False,False,False,False,False,False,False,False,False,False,True,False,False,True
 257,19,Japan,3.4,8.2,1,False,False,True,False,False,False,True,False,False,False,False,False,False,False,False,False,False,True,True,False
 258,21,Italy,5.3,6.8,3,True,False,False,False,True,False,False,False,False,False,False,False,False,False,False,False,False,True,False,True
-259,20,South Korea,5.0,6.7,3,False,False,True,False,False,True,False,False,False,False,False,False,False,False,False,False,True,False,True,False
+259,20,South Korea,5,6.7,3,False,False,True,False,False,True,False,False,False,False,False,False,False,False,False,False,True,False,True,False
 260,22,Russia,4.4,7.6,2,True,False,False,False,False,False,False,False,False,False,False,True,False,False,False,False,False,True,False,True
 261,19,USA,6.6,5.6,4,False,False,True,False,False,False,False,False,False,True,False,False,False,False,False,False,True,False,True,False
 262,21,UK,5.3,6.3,3,True,False,False,False,True,False,False,False,False,False,False,False,False,False,False,False,False,True,False,True
@@ -265,7 +265,7 @@ Student_ID,Age,Country,Avg_Daily_Usage_Hours,Sleep_Hours_Per_Night,Conflicts_Ove
 264,22,Germany,3.8,7.7,1,True,False,False,False,True,False,False,False,False,False,False,False,False,False,False,False,False,True,False,True
 265,19,Japan,3.3,8.3,1,False,False,True,False,False,False,True,False,False,False,False,False,False,False,False,False,False,True,True,False
 266,21,Italy,5.2,6.9,3,True,False,False,False,False,False,False,False,False,True,False,False,False,False,False,False,True,False,False,True
-267,20,South Korea,4.8,7.0,3,False,False,True,False,False,True,False,False,False,False,False,False,False,False,False,False,False,True,True,False
+267,20,South Korea,4.8,7,3,False,False,True,False,False,True,False,False,False,False,False,False,False,False,False,False,False,True,True,False
 268,22,Russia,4.3,7.7,2,True,False,False,False,False,False,False,False,False,False,False,True,False,False,False,False,True,False,False,True
 269,19,USA,6.4,5.7,4,False,False,True,False,True,False,False,False,False,False,False,False,False,False,False,False,False,True,True,False
 270,21,UK,5.2,6.4,3,True,False,False,True,False,False,False,False,False,False,False,False,False,False,False,False,True,False,False,True
@@ -284,19 +284,19 @@ Student_ID,Age,Country,Avg_Daily_Usage_Hours,Sleep_Hours_Per_Night,Conflicts_Ove
 283,20,South Korea,4.6,7.2,3,False,False,True,False,False,True,False,False,False,False,False,False,False,False,False,False,False,True,True,False
 284,22,Russia,4.1,7.9,2,True,False,False,False,False,False,False,False,False,False,False,True,False,False,False,False,True,False,False,True
 285,19,USA,6.7,5.4,4,False,False,True,False,True,False,False,False,False,False,False,False,False,False,False,False,False,True,True,False
-286,21,UK,5.0,6.6,3,True,False,False,True,False,False,False,False,False,False,False,False,False,False,False,False,True,False,False,True
+286,21,UK,5,6.6,3,True,False,False,True,False,False,False,False,False,False,False,False,False,False,False,False,True,False,False,True
 287,20,Australia,4.3,7.5,2,False,False,True,False,True,False,False,False,False,False,False,False,False,False,False,False,False,True,True,False
-288,22,Germany,3.5,8.0,1,True,False,False,True,False,False,False,False,False,False,False,False,False,False,False,False,True,False,False,True
-289,19,Japan,3.0,8.6,1,False,False,True,False,False,False,True,False,False,False,False,False,False,False,False,False,False,True,True,False
+288,22,Germany,3.5,8,1,True,False,False,True,False,False,False,False,False,False,False,False,False,False,False,False,True,False,False,True
+289,19,Japan,3,8.6,1,False,False,True,False,False,False,True,False,False,False,False,False,False,False,False,False,False,True,True,False
 290,21,Italy,5.2,6.9,3,True,False,False,False,True,False,False,False,False,False,False,False,False,False,False,False,False,True,False,True
 291,20,South Korea,4.5,7.3,3,False,False,True,False,False,True,False,False,False,False,False,False,False,False,False,False,True,False,True,False
-292,22,Russia,4.0,8.0,2,True,False,False,False,False,False,False,False,False,False,False,True,False,False,False,False,False,True,False,True
+292,22,Russia,4,8,2,True,False,False,False,False,False,False,False,False,False,False,True,False,False,False,False,False,True,False,True
 293,19,USA,6.8,5.3,4,False,False,True,False,False,False,False,False,False,True,False,False,False,False,False,False,True,False,True,False
 294,21,UK,4.9,6.7,3,True,False,False,False,True,False,False,False,False,False,False,False,False,False,False,False,False,True,False,True
 295,20,Australia,4.2,7.6,2,False,False,True,True,False,False,False,False,False,False,False,False,False,False,False,False,True,False,True,False
 296,22,Germany,3.4,8.1,1,True,False,False,False,True,False,False,False,False,False,False,False,False,False,False,False,False,True,False,True
 297,19,Japan,2.9,8.7,1,False,False,True,False,False,False,True,False,False,False,False,False,False,False,False,False,False,True,True,False
-298,21,Italy,5.1,7.0,3,True,False,False,False,False,False,False,False,False,True,False,False,False,False,False,False,True,False,False,True
+298,21,Italy,5.1,7,3,True,False,False,False,False,False,False,False,False,True,False,False,False,False,False,False,True,False,False,True
 299,20,South Korea,4.4,7.4,3,False,False,True,False,False,True,False,False,False,False,False,False,False,False,False,False,False,True,True,False
 300,22,Russia,3.9,8.1,2,True,False,False,False,False,False,False,False,False,False,False,True,False,False,False,False,True,False,False,True
 301,19,USA,6.9,5.2,4,False,False,True,False,True,False,False,False,False,False,False,False,False,False,False,False,False,True,True,False
@@ -304,26 +304,26 @@ Student_ID,Age,Country,Avg_Daily_Usage_Hours,Sleep_Hours_Per_Night,Conflicts_Ove
 303,20,Australia,4.1,7.7,2,False,False,True,False,True,False,False,False,False,False,False,False,False,False,False,False,False,True,True,False
 304,22,Germany,3.3,8.2,1,True,False,False,True,False,False,False,False,False,False,False,False,False,False,False,False,True,False,False,True
 305,19,Japan,2.8,8.8,1,False,False,True,False,False,False,True,False,False,False,False,False,False,False,False,False,False,True,True,False
-306,21,Italy,5.0,7.1,3,True,False,False,False,True,False,False,False,False,False,False,False,False,False,False,False,False,True,False,True
+306,21,Italy,5,7.1,3,True,False,False,False,True,False,False,False,False,False,False,False,False,False,False,False,False,True,False,True
 307,20,South Korea,4.3,7.5,3,False,False,True,False,False,True,False,False,False,False,False,False,False,False,False,False,True,False,True,False
 308,22,Russia,3.8,8.2,2,True,False,False,False,False,False,False,False,False,False,False,True,False,False,False,False,False,True,False,True
-309,19,USA,7.0,5.1,4,False,False,True,False,False,False,False,False,False,True,False,False,False,False,False,False,True,False,True,False
+309,19,USA,7,5.1,4,False,False,True,False,False,False,False,False,False,True,False,False,False,False,False,False,True,False,True,False
 310,21,UK,4.7,6.9,3,True,False,False,False,True,False,False,False,False,False,False,False,False,False,False,False,False,True,False,True
-311,20,Australia,4.0,7.8,2,False,False,True,True,False,False,False,False,False,False,False,False,False,False,False,False,True,False,True,False
+311,20,Australia,4,7.8,2,False,False,True,True,False,False,False,False,False,False,False,False,False,False,False,False,True,False,True,False
 312,22,Germany,3.2,8.3,1,True,False,False,False,True,False,False,False,False,False,False,False,False,False,False,False,False,True,False,True
 313,19,Japan,2.7,8.9,1,False,False,True,False,False,False,True,False,False,False,False,False,False,False,False,False,False,True,True,False
 314,21,Italy,4.9,7.2,3,True,False,False,False,False,False,False,False,False,True,False,False,False,False,False,False,True,False,False,True
 315,20,South Korea,4.2,7.6,3,False,False,True,False,False,True,False,False,False,False,False,False,False,False,False,False,False,True,True,False
 316,22,Russia,3.7,8.3,2,True,False,False,False,False,False,False,False,False,False,False,True,False,False,False,False,True,False,False,True
-317,19,USA,7.1,5.0,4,False,False,True,False,True,False,False,False,False,False,False,False,False,False,False,False,False,True,True,False
-318,21,UK,4.6,7.0,3,True,False,False,True,False,False,False,False,False,False,False,False,False,False,False,False,True,False,False,True
+317,19,USA,7.1,5,4,False,False,True,False,True,False,False,False,False,False,False,False,False,False,False,False,False,True,True,False
+318,21,UK,4.6,7,3,True,False,False,True,False,False,False,False,False,False,False,False,False,False,False,False,True,False,False,True
 319,20,Australia,3.9,7.9,2,False,False,True,False,True,False,False,False,False,False,False,False,False,False,False,False,False,True,True,False
 320,22,Germany,3.1,8.4,1,True,False,False,True,False,False,False,False,False,False,False,False,False,False,False,False,True,False,False,True
 321,19,Spain,5.2,6.8,3,False,False,True,False,True,False,False,False,False,False,False,False,False,False,False,False,False,True,True,False
 322,21,Denmark,4.1,7.8,2,True,False,False,True,False,False,False,False,False,False,False,False,False,False,False,False,True,False,False,True
-323,20,Ireland,5.0,7.0,3,False,False,True,False,True,False,False,False,False,False,False,False,False,False,False,False,False,True,True,False
+323,20,Ireland,5,7,3,False,False,True,False,True,False,False,False,False,False,False,False,False,False,False,False,False,True,True,False
 324,22,India,5.8,6.5,4,True,False,False,False,False,False,False,False,False,False,False,False,False,True,False,False,True,False,False,True
-325,19,Switzerland,4.0,7.9,2,False,False,True,False,True,False,False,False,False,False,False,False,False,False,False,False,False,True,True,False
+325,19,Switzerland,4,7.9,2,False,False,True,False,True,False,False,False,False,False,False,False,False,False,False,False,False,True,True,False
 326,21,Turkey,5.5,6.7,3,True,False,False,False,True,False,False,False,False,False,False,False,False,False,False,False,False,True,False,True
 327,20,USA,6.8,5.5,4,False,False,True,False,False,False,False,False,False,True,False,False,False,False,False,False,True,False,True,False
 328,22,Mexico,5.6,6.6,3,True,False,False,False,False,False,False,False,False,False,False,False,False,True,False,False,False,True,False,True
@@ -333,32 +333,32 @@ Student_ID,Age,Country,Avg_Daily_Usage_Hours,Sleep_Hours_Per_Night,Conflicts_Ove
 332,22,Denmark,3.9,7.9,2,True,False,False,True,False,False,False,False,False,False,False,False,False,False,False,False,True,False,False,True
 333,19,Ireland,4.8,7.1,3,False,False,True,False,True,False,False,False,False,False,False,False,False,False,False,False,False,True,True,False
 334,21,India,5.9,6.4,4,True,False,False,False,False,False,False,False,False,False,False,False,False,True,False,False,True,False,False,True
-335,20,Switzerland,3.8,8.0,2,False,False,True,False,True,False,False,False,False,False,False,False,False,False,False,False,False,True,True,False
+335,20,Switzerland,3.8,8,2,False,False,True,False,True,False,False,False,False,False,False,False,False,False,False,False,False,True,True,False
 336,22,Turkey,5.4,6.8,3,True,False,False,False,False,False,False,False,False,True,False,False,False,False,False,False,False,True,False,True
 337,19,USA,6.9,5.4,4,False,False,True,False,True,False,False,False,False,False,False,False,False,False,False,False,True,False,True,False
 338,21,Mexico,5.7,6.5,3,True,False,False,False,False,False,False,False,False,False,False,False,False,True,False,False,False,True,False,True
 339,20,France,4.4,7.6,2,False,False,True,False,True,False,False,False,False,False,False,False,False,False,False,False,True,False,True,False
-340,22,Canada,5.2,7.0,3,True,False,False,False,False,False,False,False,False,True,False,False,False,False,False,False,False,True,False,True
-341,19,Spain,5.0,6.9,3,False,False,True,False,True,False,False,False,False,False,False,False,False,False,False,False,False,True,True,False
-342,21,Denmark,3.8,8.0,2,True,False,False,True,False,False,False,False,False,False,False,False,False,False,False,False,True,False,False,True
+340,22,Canada,5.2,7,3,True,False,False,False,False,False,False,False,False,True,False,False,False,False,False,False,False,True,False,True
+341,19,Spain,5,6.9,3,False,False,True,False,True,False,False,False,False,False,False,False,False,False,False,False,False,True,True,False
+342,21,Denmark,3.8,8,2,True,False,False,True,False,False,False,False,False,False,False,False,False,False,False,False,True,False,False,True
 343,20,Ireland,4.7,7.2,3,False,False,True,False,False,False,False,False,False,True,False,False,False,False,False,False,False,True,True,False
-344,22,India,6.0,6.3,4,True,False,False,False,False,False,False,False,False,False,False,False,False,True,False,False,True,False,False,True
+344,22,India,6,6.3,4,True,False,False,False,False,False,False,False,False,False,False,False,False,True,False,False,True,False,False,True
 345,19,Switzerland,3.7,8.1,2,False,False,True,False,True,False,False,False,False,False,False,False,False,False,False,False,False,True,True,False
 346,21,Turkey,5.3,6.9,3,True,False,False,False,True,False,False,False,False,False,False,False,False,False,False,False,False,True,False,True
-347,20,USA,7.0,5.3,4,False,False,True,False,False,False,False,False,False,True,False,False,False,False,False,False,True,False,True,False
+347,20,USA,7,5.3,4,False,False,True,False,False,False,False,False,False,True,False,False,False,False,False,False,True,False,True,False
 348,22,Mexico,5.8,6.4,3,True,False,False,False,False,False,False,False,False,False,False,False,False,True,False,False,False,True,False,True
 349,19,France,4.3,7.7,2,False,False,True,False,True,False,False,False,False,False,False,False,False,False,False,False,True,False,True,False
 350,21,Canada,5.1,7.1,3,True,False,False,False,True,False,False,False,False,False,False,False,False,False,False,False,False,True,False,True
-351,20,Spain,4.9,7.0,3,False,False,True,False,False,False,False,False,False,True,False,False,False,False,False,False,False,True,True,False
+351,20,Spain,4.9,7,3,False,False,True,False,False,False,False,False,False,True,False,False,False,False,False,False,False,True,True,False
 352,22,Denmark,3.7,8.1,2,True,False,False,True,False,False,False,False,False,False,False,False,False,False,False,False,True,False,False,True
 353,19,Ireland,4.6,7.3,3,False,False,True,False,True,False,False,False,False,False,False,False,False,False,False,False,False,True,True,False
 354,21,India,6.1,6.2,4,True,False,False,False,False,False,False,False,False,False,False,False,False,True,False,False,True,False,False,True
 355,20,Switzerland,3.6,8.2,2,False,False,True,False,True,False,False,False,False,False,False,False,False,False,False,False,False,True,True,False
-356,22,Turkey,5.2,7.0,3,True,False,False,False,False,False,False,False,False,True,False,False,False,False,False,False,False,True,False,True
+356,22,Turkey,5.2,7,3,True,False,False,False,False,False,False,False,False,True,False,False,False,False,False,False,False,True,False,True
 357,19,USA,7.1,5.2,4,False,False,True,False,True,False,False,False,False,False,False,False,False,False,False,False,True,False,True,False
 358,21,Mexico,5.9,6.3,3,True,False,False,False,False,False,False,False,False,False,False,False,False,True,False,False,False,True,False,True
 359,20,France,4.2,7.8,2,False,False,True,False,True,False,False,False,False,False,False,False,False,False,False,False,True,False,True,False
-360,22,Canada,5.0,7.2,3,True,False,False,False,False,False,False,False,False,True,False,False,False,False,False,False,False,True,False,True
+360,22,Canada,5,7.2,3,True,False,False,False,False,False,False,False,False,True,False,False,False,False,False,False,False,True,False,True
 361,19,Spain,4.8,7.1,3,False,False,True,False,True,False,False,False,False,False,False,False,False,False,False,False,False,True,True,False
 362,21,Denmark,3.6,8.2,2,True,False,False,True,False,False,False,False,False,False,False,False,False,False,False,False,True,False,False,True
 363,20,Ireland,4.5,7.4,3,False,False,True,False,False,False,False,False,False,True,False,False,False,False,False,False,False,True,True,False
@@ -366,18 +366,18 @@ Student_ID,Age,Country,Avg_Daily_Usage_Hours,Sleep_Hours_Per_Night,Conflicts_Ove
 365,19,Switzerland,3.5,8.3,2,False,False,True,False,True,False,False,False,False,False,False,False,False,False,False,False,False,True,True,False
 366,21,Turkey,5.1,7.1,3,True,False,False,False,True,False,False,False,False,False,False,False,False,False,False,False,False,True,False,True
 367,20,USA,7.2,5.1,4,False,False,True,False,False,False,False,False,False,True,False,False,False,False,False,False,True,False,True,False
-368,22,Mexico,6.0,6.2,3,True,False,False,False,False,False,False,False,False,False,False,False,False,True,False,False,False,True,False,True
+368,22,Mexico,6,6.2,3,True,False,False,False,False,False,False,False,False,False,False,False,False,True,False,False,False,True,False,True
 369,19,France,4.1,7.9,2,False,False,True,False,True,False,False,False,False,False,False,False,False,False,False,False,True,False,True,False
 370,21,Canada,4.9,7.3,3,True,False,False,False,True,False,False,False,False,False,False,False,False,False,False,False,False,True,False,True
 371,20,Spain,4.7,7.2,3,False,False,True,False,False,False,False,False,False,True,False,False,False,False,False,False,False,True,True,False
 372,22,Denmark,3.5,8.3,2,True,False,False,True,False,False,False,False,False,False,False,False,False,False,False,False,True,False,False,True
 373,19,Ireland,4.4,7.5,3,False,False,True,False,True,False,False,False,False,False,False,False,False,False,False,False,False,True,True,False
-374,21,India,6.3,6.0,4,True,False,False,False,False,False,False,False,False,False,False,False,False,True,False,False,True,False,False,True
+374,21,India,6.3,6,4,True,False,False,False,False,False,False,False,False,False,False,False,False,True,False,False,True,False,False,True
 375,20,Switzerland,3.4,8.4,2,False,False,True,False,True,False,False,False,False,False,False,False,False,False,False,False,False,True,True,False
-376,22,Turkey,5.0,7.2,3,True,False,False,False,False,False,False,False,False,True,False,False,False,False,False,False,False,True,False,True
-377,19,USA,7.3,5.0,4,False,False,True,False,True,False,False,False,False,False,False,False,False,False,False,False,True,False,True,False
+376,22,Turkey,5,7.2,3,True,False,False,False,False,False,False,False,False,True,False,False,False,False,False,False,False,True,False,True
+377,19,USA,7.3,5,4,False,False,True,False,True,False,False,False,False,False,False,False,False,False,False,False,True,False,True,False
 378,21,Mexico,6.1,6.1,3,True,False,False,False,False,False,False,False,False,False,False,False,False,True,False,False,False,True,False,True
-379,20,France,4.0,8.0,2,False,False,True,False,True,False,False,False,False,False,False,False,False,False,False,False,True,False,True,False
+379,20,France,4,8,2,False,False,True,False,True,False,False,False,False,False,False,False,False,False,False,False,True,False,True,False
 380,22,Canada,4.8,7.4,3,True,False,False,False,False,False,False,False,False,True,False,False,False,False,False,False,False,True,False,True
 381,19,Spain,4.6,7.3,3,False,False,True,False,True,False,False,False,False,False,False,False,False,False,False,False,False,True,True,False
 382,21,Denmark,3.4,8.4,2,True,False,False,True,False,False,False,False,False,False,False,False,False,False,False,False,True,False,False,True
@@ -386,7 +386,7 @@ Student_ID,Age,Country,Avg_Daily_Usage_Hours,Sleep_Hours_Per_Night,Conflicts_Ove
 385,19,Switzerland,3.3,8.5,2,False,False,True,False,True,False,False,False,False,False,False,False,False,False,False,False,False,True,True,False
 386,21,Turkey,4.9,7.3,3,True,False,False,False,True,False,False,False,False,False,False,False,False,False,False,False,False,True,False,True
 387,20,USA,7.4,4.9,4,False,False,True,False,False,False,False,False,False,True,False,False,False,False,False,False,True,False,True,False
-388,22,Mexico,6.2,6.0,3,True,False,False,False,False,False,False,False,False,False,False,False,False,True,False,False,False,True,False,True
+388,22,Mexico,6.2,6,3,True,False,False,False,False,False,False,False,False,False,False,False,False,True,False,False,False,True,False,True
 389,19,France,3.9,8.1,2,False,False,True,False,True,False,False,False,False,False,False,False,False,False,False,False,True,False,True,False
 390,21,Canada,4.7,7.5,3,True,False,False,False,True,False,False,False,False,False,False,False,False,False,False,False,False,True,False,True
 391,20,Spain,4.5,7.4,3,False,False,True,False,False,False,False,False,False,True,False,False,False,False,False,False,False,True,True,False
@@ -411,17 +411,17 @@ Student_ID,Age,Country,Avg_Daily_Usage_Hours,Sleep_Hours_Per_Night,Conflicts_Ove
 410,21,Canada,4.5,7.7,3,True,False,False,False,True,False,False,False,False,False,False,False,False,False,False,False,False,True,False,True
 411,20,Spain,4.3,7.6,3,False,False,True,False,False,False,False,False,False,True,False,False,False,False,False,False,False,True,True,False
 412,22,Denmark,3.1,8.7,2,True,False,False,True,False,False,False,False,False,False,False,False,False,False,False,False,True,False,False,True
-413,19,Ireland,4.0,7.9,3,False,False,True,False,True,False,False,False,False,False,False,False,False,False,False,False,False,True,True,False
+413,19,Ireland,4,7.9,3,False,False,True,False,True,False,False,False,False,False,False,False,False,False,False,False,False,True,True,False
 414,21,India,6.7,5.6,4,True,False,False,False,False,False,False,False,False,False,False,False,False,True,False,False,True,False,False,True
-415,20,Switzerland,3.0,8.8,2,False,False,True,False,True,False,False,False,False,False,False,False,False,False,False,False,False,True,True,False
+415,20,Switzerland,3,8.8,2,False,False,True,False,True,False,False,False,False,False,False,False,False,False,False,False,False,True,True,False
 416,22,Turkey,4.6,7.6,3,True,False,False,False,False,False,False,False,False,True,False,False,False,False,False,False,False,True,False,True
 417,19,USA,7.7,4.6,4,False,False,True,False,True,False,False,False,False,False,False,False,False,False,False,False,True,False,True,False
 418,21,Mexico,6.5,5.7,3,True,False,False,False,False,False,False,False,False,False,False,False,False,True,False,False,False,True,False,True
 419,20,France,3.6,8.4,2,False,False,True,False,True,False,False,False,False,False,False,False,False,False,False,False,True,False,True,False
 420,22,Canada,4.4,7.8,3,True,False,False,False,False,False,False,False,False,True,False,False,False,False,False,False,False,True,False,True
 421,19,Spain,4.2,7.7,3,False,False,True,False,True,False,False,False,False,False,False,False,False,False,False,False,False,True,True,False
-422,21,Denmark,3.0,8.8,2,True,False,False,True,False,False,False,False,False,False,False,False,False,False,False,False,True,False,False,True
-423,20,Ireland,3.9,8.0,3,False,False,True,False,False,False,False,False,False,True,False,False,False,False,False,False,False,True,True,False
+422,21,Denmark,3,8.8,2,True,False,False,True,False,False,False,False,False,False,False,False,False,False,False,False,True,False,False,True
+423,20,Ireland,3.9,8,3,False,False,True,False,False,False,False,False,False,True,False,False,False,False,False,False,False,True,True,False
 424,22,India,6.8,5.5,4,True,False,False,False,False,False,False,False,False,False,False,False,False,True,False,False,True,False,False,True
 425,19,Switzerland,2.9,8.9,2,False,False,True,False,True,False,False,False,False,False,False,False,False,False,False,False,False,True,True,False
 426,21,Turkey,4.5,7.7,3,True,False,False,False,True,False,False,False,False,False,False,False,False,False,False,False,False,True,False,True
@@ -433,32 +433,32 @@ Student_ID,Age,Country,Avg_Daily_Usage_Hours,Sleep_Hours_Per_Night,Conflicts_Ove
 432,22,Denmark,2.9,8.9,2,True,False,False,True,False,False,False,False,False,False,False,False,False,False,False,False,True,False,False,True
 433,19,Ireland,3.8,8.1,3,False,False,True,False,True,False,False,False,False,False,False,False,False,False,False,False,False,True,True,False
 434,21,India,6.9,5.4,4,True,False,False,False,False,False,False,False,False,False,False,False,False,True,False,False,True,False,False,True
-435,20,Switzerland,2.8,9.0,2,False,False,True,False,True,False,False,False,False,False,False,False,False,False,False,False,False,True,True,False
+435,20,Switzerland,2.8,9,2,False,False,True,False,True,False,False,False,False,False,False,False,False,False,False,False,False,True,True,False
 436,22,Turkey,4.4,7.8,3,True,False,False,False,False,False,False,False,False,True,False,False,False,False,False,False,False,True,False,True
 437,19,USA,7.9,4.4,4,False,False,True,False,True,False,False,False,False,False,False,False,False,False,False,False,True,False,True,False
 438,21,Mexico,6.7,5.5,3,True,False,False,False,False,False,False,False,False,False,False,False,False,True,False,False,False,True,False,True
 439,20,France,3.4,8.6,2,False,False,True,False,True,False,False,False,False,False,False,False,False,False,False,False,True,False,True,False
-440,22,Canada,4.2,8.0,3,True,False,False,False,False,False,False,False,False,True,False,False,False,False,False,False,False,True,False,True
-441,19,Spain,4.0,7.9,3,False,False,True,False,True,False,False,False,False,False,False,False,False,False,False,False,False,True,True,False
-442,21,Denmark,2.8,9.0,2,True,False,False,True,False,False,False,False,False,False,False,False,False,False,False,False,True,False,False,True
+440,22,Canada,4.2,8,3,True,False,False,False,False,False,False,False,False,True,False,False,False,False,False,False,False,True,False,True
+441,19,Spain,4,7.9,3,False,False,True,False,True,False,False,False,False,False,False,False,False,False,False,False,False,True,True,False
+442,21,Denmark,2.8,9,2,True,False,False,True,False,False,False,False,False,False,False,False,False,False,False,False,True,False,False,True
 443,20,Ireland,3.7,8.2,3,False,False,True,False,False,False,False,False,False,True,False,False,False,False,False,False,False,True,True,False
-444,22,India,7.0,5.3,4,True,False,False,False,False,False,False,False,False,False,False,False,False,True,False,False,True,False,False,True
+444,22,India,7,5.3,4,True,False,False,False,False,False,False,False,False,False,False,False,False,True,False,False,True,False,False,True
 445,19,Switzerland,2.7,9.1,2,False,False,True,False,True,False,False,False,False,False,False,False,False,False,False,False,False,True,True,False
 446,21,Turkey,4.3,7.9,3,True,False,False,False,True,False,False,False,False,False,False,False,False,False,False,False,False,True,False,True
-447,20,USA,8.0,4.3,4,False,False,True,False,False,False,False,False,False,True,False,False,False,False,False,False,True,False,True,False
+447,20,USA,8,4.3,4,False,False,True,False,False,False,False,False,False,True,False,False,False,False,False,False,True,False,True,False
 448,22,Mexico,6.8,5.4,3,True,False,False,False,False,False,False,False,False,False,False,False,False,True,False,False,False,True,False,True
 449,19,France,3.3,8.7,2,False,False,True,False,True,False,False,False,False,False,False,False,False,False,False,False,True,False,True,False
 450,21,Canada,4.1,8.1,3,True,False,False,False,True,False,False,False,False,False,False,False,False,False,False,False,False,True,False,True
-451,20,Spain,3.9,8.0,3,False,False,True,False,False,False,False,False,False,True,False,False,False,False,False,False,False,True,True,False
+451,20,Spain,3.9,8,3,False,False,True,False,False,False,False,False,False,True,False,False,False,False,False,False,False,True,True,False
 452,22,Denmark,2.7,9.1,2,True,False,False,True,False,False,False,False,False,False,False,False,False,False,False,False,True,False,False,True
 453,19,Ireland,3.6,8.3,3,False,False,True,False,True,False,False,False,False,False,False,False,False,False,False,False,False,True,True,False
 454,21,India,7.1,5.2,4,True,False,False,False,False,False,False,False,False,False,False,False,False,True,False,False,True,False,False,True
 455,20,Switzerland,2.6,9.2,2,False,False,True,False,True,False,False,False,False,False,False,False,False,False,False,False,False,True,True,False
-456,22,Turkey,4.2,8.0,3,True,False,False,False,False,False,False,False,False,True,False,False,False,False,False,False,False,True,False,True
+456,22,Turkey,4.2,8,3,True,False,False,False,False,False,False,False,False,True,False,False,False,False,False,False,False,True,False,True
 457,19,USA,8.1,4.2,4,False,False,True,False,True,False,False,False,False,False,False,False,False,False,False,False,True,False,True,False
 458,21,Mexico,6.9,5.3,3,True,False,False,False,False,False,False,False,False,False,False,False,False,True,False,False,False,True,False,True
 459,20,France,3.2,8.8,2,False,False,True,False,True,False,False,False,False,False,False,False,False,False,False,False,True,False,True,False
-460,22,Canada,4.0,8.2,3,True,False,False,False,False,False,False,False,False,True,False,False,False,False,False,False,False,True,False,True
+460,22,Canada,4,8.2,3,True,False,False,False,False,False,False,False,False,True,False,False,False,False,False,False,False,True,False,True
 461,19,Spain,3.8,8.1,3,False,False,True,False,True,False,False,False,False,False,False,False,False,False,False,False,False,True,True,False
 462,21,Denmark,2.6,9.2,2,True,False,False,True,False,False,False,False,False,False,False,False,False,False,False,False,True,False,False,True
 463,20,Ireland,3.5,8.4,3,False,False,True,False,False,False,False,False,False,True,False,False,False,False,False,False,False,True,True,False
@@ -466,18 +466,18 @@ Student_ID,Age,Country,Avg_Daily_Usage_Hours,Sleep_Hours_Per_Night,Conflicts_Ove
 465,19,Switzerland,2.5,9.3,2,False,False,True,False,True,False,False,False,False,False,False,False,False,False,False,False,False,True,True,False
 466,21,Turkey,4.1,8.1,3,True,False,False,False,True,False,False,False,False,False,False,False,False,False,False,False,False,True,False,True
 467,20,USA,8.2,4.1,4,False,False,True,False,False,False,False,False,False,True,False,False,False,False,False,False,True,False,True,False
-468,22,Mexico,7.0,5.2,3,True,False,False,False,False,False,False,False,False,False,False,False,False,True,False,False,False,True,False,True
+468,22,Mexico,7,5.2,3,True,False,False,False,False,False,False,False,False,False,False,False,False,True,False,False,False,True,False,True
 469,19,France,3.1,8.9,2,False,False,True,False,True,False,False,False,False,False,False,False,False,False,False,False,True,False,True,False
 470,21,Canada,3.9,8.3,3,True,False,False,False,True,False,False,False,False,False,False,False,False,False,False,False,False,True,False,True
 471,20,Spain,3.7,8.2,3,False,False,True,False,False,False,False,False,False,True,False,False,False,False,False,False,False,True,True,False
 472,22,Denmark,2.5,9.3,2,True,False,False,True,False,False,False,False,False,False,False,False,False,False,False,False,True,False,False,True
 473,19,Ireland,3.4,8.5,3,False,False,True,False,True,False,False,False,False,False,False,False,False,False,False,False,False,True,True,False
-474,21,India,7.3,5.0,4,True,False,False,False,False,False,False,False,False,False,False,False,False,True,False,False,True,False,False,True
+474,21,India,7.3,5,4,True,False,False,False,False,False,False,False,False,False,False,False,False,True,False,False,True,False,False,True
 475,20,Switzerland,2.4,9.4,2,False,False,True,False,True,False,False,False,False,False,False,False,False,False,False,False,False,True,True,False
-476,22,Turkey,4.0,8.2,3,True,False,False,False,False,False,False,False,False,True,False,False,False,False,False,False,False,True,False,True
-477,19,USA,8.3,4.0,4,False,False,True,False,True,False,False,False,False,False,False,False,False,False,False,False,True,False,True,False
+476,22,Turkey,4,8.2,3,True,False,False,False,False,False,False,False,False,True,False,False,False,False,False,False,False,True,False,True
+477,19,USA,8.3,4,4,False,False,True,False,True,False,False,False,False,False,False,False,False,False,False,False,True,False,True,False
 478,21,Mexico,7.1,5.1,3,True,False,False,False,False,False,False,False,False,False,False,False,False,True,False,False,False,True,False,True
-479,20,France,3.0,9.0,2,False,False,True,False,True,False,False,False,False,False,False,False,False,False,False,False,True,False,True,False
+479,20,France,3,9,2,False,False,True,False,True,False,False,False,False,False,False,False,False,False,False,False,True,False,True,False
 480,22,Canada,3.8,8.4,3,True,False,False,False,False,False,False,False,False,True,False,False,False,False,False,False,False,True,False,True
 481,19,Spain,3.6,8.3,3,False,False,True,False,True,False,False,False,False,False,False,False,False,False,False,False,False,True,True,False
 482,21,Denmark,2.4,9.4,2,True,False,False,True,False,False,False,False,False,False,False,False,False,False,False,False,True,False,False,True
@@ -486,7 +486,7 @@ Student_ID,Age,Country,Avg_Daily_Usage_Hours,Sleep_Hours_Per_Night,Conflicts_Ove
 485,19,Switzerland,2.3,9.5,2,False,False,True,False,True,False,False,False,False,False,False,False,False,False,False,False,False,True,True,False
 486,21,Turkey,3.9,8.3,3,True,False,False,False,True,False,False,False,False,False,False,False,False,False,False,False,False,True,False,True
 487,20,USA,8.4,3.9,4,False,False,True,False,False,False,False,False,False,True,False,False,False,False,False,False,True,False,True,False
-488,22,Mexico,7.2,5.0,3,True,False,False,False,False,False,False,False,False,False,False,False,False,True,False,False,False,True,False,True
+488,22,Mexico,7.2,5,3,True,False,False,False,False,False,False,False,False,False,False,False,False,True,False,False,False,True,False,True
 489,19,France,2.9,9.1,2,False,False,True,False,True,False,False,False,False,False,False,False,False,False,False,False,True,False,True,False
 490,21,Canada,3.7,8.5,3,True,False,False,False,True,False,False,False,False,False,False,False,False,False,False,False,False,True,False,True
 491,20,Spain,3.5,8.4,3,False,False,True,False,False,False,False,False,False,True,False,False,False,False,False,False,False,True,True,False
@@ -503,11 +503,11 @@ Student_ID,Age,Country,Avg_Daily_Usage_Hours,Sleep_Hours_Per_Night,Conflicts_Ove
 502,21,China,4.5,7.8,2,True,False,False,False,False,False,False,False,False,False,False,False,True,False,False,False,True,False,False,True
 503,20,Netherlands,3.8,8.2,2,False,False,True,False,True,False,False,False,False,False,False,False,False,False,False,False,False,True,True,False
 504,22,New Zealand,4.7,7.5,3,True,False,False,False,True,False,False,False,False,False,False,False,False,False,False,False,True,False,False,True
-505,19,Singapore,5.1,7.0,3,False,False,True,False,False,False,False,False,False,True,False,False,False,False,False,False,False,True,True,False
+505,19,Singapore,5.1,7,3,False,False,True,False,False,False,False,False,False,True,False,False,False,False,False,False,False,True,True,False
 506,21,Malaysia,5.5,6.8,3,True,False,False,False,False,False,False,False,False,False,False,False,False,True,False,False,False,True,False,True
 507,20,UAE,6.5,6.5,4,False,False,True,False,True,False,False,False,False,False,False,False,False,False,False,False,True,False,True,False
 508,22,Poland,4.2,7.9,2,True,False,False,True,False,False,False,False,False,False,False,False,False,False,False,False,False,True,False,True
-509,19,India,6.8,6.0,4,False,False,True,False,False,False,False,False,False,False,False,False,False,True,False,False,True,False,True,False
+509,19,India,6.8,6,4,False,False,True,False,False,False,False,False,False,False,False,False,False,True,False,False,True,False,True,False
 510,21,Canada,4.8,7.4,3,True,False,False,False,True,False,False,False,False,False,False,False,False,False,False,False,False,True,False,True
 511,20,Brazil,6.1,6.4,3,False,False,True,False,True,False,False,False,False,False,False,False,False,False,False,False,False,True,True,False
 512,22,China,4.4,7.9,2,True,False,False,False,False,False,False,False,False,False,False,False,True,False,False,False,True,False,False,True
@@ -516,18 +516,18 @@ Student_ID,Age,Country,Avg_Daily_Usage_Hours,Sleep_Hours_Per_Night,Conflicts_Ove
 515,20,Singapore,5.2,6.9,3,False,False,True,False,False,False,False,False,False,True,False,False,False,False,False,False,False,True,True,False
 516,22,Malaysia,5.6,6.7,3,True,False,False,False,False,False,False,False,False,False,False,False,False,True,False,False,False,True,False,True
 517,19,UAE,6.6,6.4,4,False,False,True,False,True,False,False,False,False,False,False,False,False,False,False,False,True,False,True,False
-518,21,Poland,4.1,8.0,2,True,False,False,True,False,False,False,False,False,False,False,False,False,False,False,False,False,True,False,True
+518,21,Poland,4.1,8,2,True,False,False,True,False,False,False,False,False,False,False,False,False,False,False,False,False,True,False,True
 519,20,India,6.9,5.9,4,False,False,True,False,False,False,False,False,False,False,False,False,False,True,False,False,True,False,True,False
 520,22,Canada,4.7,7.5,3,True,False,False,False,False,False,False,False,False,True,False,False,False,False,False,False,False,True,False,True
-521,19,Brazil,6.0,6.5,3,False,False,True,False,False,False,False,False,False,False,False,False,False,True,False,False,False,True,True,False
-522,21,China,4.3,8.0,2,True,False,False,False,False,False,False,False,False,False,False,False,True,False,False,False,True,False,False,True
+521,19,Brazil,6,6.5,3,False,False,True,False,False,False,False,False,False,False,False,False,False,True,False,False,False,True,True,False
+522,21,China,4.3,8,2,True,False,False,False,False,False,False,False,False,False,False,False,True,False,False,False,True,False,False,True
 523,20,Netherlands,3.6,8.4,2,False,False,True,False,True,False,False,False,False,False,False,False,False,False,False,False,False,True,True,False
 524,22,New Zealand,4.5,7.7,3,True,False,False,True,False,False,False,False,False,False,False,False,False,False,False,False,True,False,False,True
 525,19,Singapore,5.3,6.8,3,False,False,True,False,False,False,False,False,False,True,False,False,False,False,False,False,False,True,True,False
 526,21,Malaysia,5.7,6.6,3,True,False,False,False,False,False,False,False,False,False,False,False,False,True,False,False,False,True,False,True
 527,20,UAE,6.7,6.3,4,False,False,True,False,True,False,False,False,False,False,False,False,False,False,False,False,True,False,True,False
-528,22,Poland,4.0,8.1,2,True,False,False,True,False,False,False,False,False,False,False,False,False,False,False,False,False,True,False,True
-529,19,India,7.0,5.8,4,False,False,True,False,False,False,False,False,False,False,False,False,False,True,False,False,True,False,True,False
+528,22,Poland,4,8.1,2,True,False,False,True,False,False,False,False,False,False,False,False,False,False,False,False,False,True,False,True
+529,19,India,7,5.8,4,False,False,True,False,False,False,False,False,False,False,False,False,False,True,False,False,True,False,True,False
 530,21,Canada,4.6,7.6,3,True,False,False,False,True,False,False,False,False,False,False,False,False,False,False,False,False,True,False,True
 531,20,Brazil,5.9,6.6,3,False,False,True,False,False,False,False,False,False,True,False,False,False,False,False,False,False,True,True,False
 532,22,China,4.2,8.1,2,True,False,False,False,False,False,False,False,False,False,False,False,True,False,False,False,True,False,False,True
@@ -550,12 +550,12 @@ Student_ID,Age,Country,Avg_Daily_Usage_Hours,Sleep_Hours_Per_Night,Conflicts_Ove
 549,19,India,7.2,5.6,4,False,False,True,False,False,False,False,False,False,False,False,False,False,True,False,False,True,False,True,False
 550,21,Canada,4.4,7.8,3,True,False,False,False,True,False,False,False,False,False,False,False,False,False,False,False,False,True,False,True
 551,20,Brazil,5.7,6.8,3,False,False,True,False,False,False,False,False,False,True,False,False,False,False,False,False,False,True,True,False
-552,22,China,4.0,8.3,2,True,False,False,False,False,False,False,False,False,False,False,False,True,False,False,False,True,False,False,True
+552,22,China,4,8.3,2,True,False,False,False,False,False,False,False,False,False,False,False,True,False,False,False,True,False,False,True
 553,19,Netherlands,3.3,8.7,2,False,False,True,False,True,False,False,False,False,False,False,False,False,False,False,False,False,True,True,False
-554,21,New Zealand,4.2,8.0,3,True,False,False,True,False,False,False,False,False,False,False,False,False,False,False,False,True,False,False,True
+554,21,New Zealand,4.2,8,3,True,False,False,True,False,False,False,False,False,False,False,False,False,False,False,False,True,False,False,True
 555,20,Singapore,5.6,6.5,3,False,False,True,False,False,False,False,False,False,True,False,False,False,False,False,False,False,True,True,False
-556,22,Malaysia,6.0,6.3,3,True,False,False,False,False,False,False,False,False,False,False,False,False,True,False,False,False,True,False,True
-557,19,UAE,7.0,6.0,4,False,False,True,False,True,False,False,False,False,False,False,False,False,False,False,False,True,False,True,False
+556,22,Malaysia,6,6.3,3,True,False,False,False,False,False,False,False,False,False,False,False,False,True,False,False,False,True,False,True
+557,19,UAE,7,6,4,False,False,True,False,True,False,False,False,False,False,False,False,False,False,False,False,True,False,True,False
 558,21,Poland,3.7,8.4,2,True,False,False,True,False,False,False,False,False,False,False,False,False,False,False,False,False,True,False,True
 559,20,India,7.3,5.5,4,False,False,True,False,False,False,False,False,False,False,False,False,False,True,False,False,True,False,True,False
 560,22,Canada,4.3,7.9,3,True,False,False,False,False,False,False,False,False,True,False,False,False,False,False,False,False,True,False,True
@@ -568,7 +568,7 @@ Student_ID,Age,Country,Avg_Daily_Usage_Hours,Sleep_Hours_Per_Night,Conflicts_Ove
 567,20,UAE,7.1,5.9,4,False,False,True,False,True,False,False,False,False,False,False,False,False,False,False,False,True,False,True,False
 568,22,Poland,3.6,8.5,2,True,False,False,True,False,False,False,False,False,False,False,False,False,False,False,False,False,True,False,True
 569,19,India,7.4,5.4,4,False,False,True,False,False,False,False,False,False,False,False,False,False,True,False,False,True,False,True,False
-570,21,Canada,4.2,8.0,3,True,False,False,False,True,False,False,False,False,False,False,False,False,False,False,False,False,True,False,True
+570,21,Canada,4.2,8,3,True,False,False,False,True,False,False,False,False,False,False,False,False,False,False,False,False,True,False,True
 571,20,Spain,6.1,7.2,4,False,False,True,False,True,False,False,False,False,False,False,False,False,False,False,False,False,True,True,False
 572,23,Denmark,3.8,7.8,2,True,False,False,False,False,False,False,False,False,False,True,False,False,False,False,False,True,False,False,True
 573,19,Ireland,5.5,6.8,4,False,False,True,False,False,False,False,False,False,True,False,False,False,False,False,False,False,True,True,False
@@ -578,10 +578,10 @@ Student_ID,Age,Country,Avg_Daily_Usage_Hours,Sleep_Hours_Per_Night,Conflicts_Ove
 577,20,USA,5.9,6.7,3,False,False,True,False,True,False,False,False,False,False,False,False,False,False,False,False,True,False,True,False
 578,22,Mexico,6.5,6.1,4,True,False,False,True,False,False,False,False,False,False,False,False,False,False,False,False,False,True,False,True
 579,19,France,4.7,7.4,2,False,False,True,False,False,False,False,False,False,False,True,False,False,False,False,False,False,True,True,False
-580,23,Canada,5.2,7.0,3,True,False,False,False,True,False,False,False,False,False,False,False,False,False,False,False,True,False,False,True
+580,23,Canada,5.2,7,3,True,False,False,False,True,False,False,False,False,False,False,False,False,False,False,False,True,False,False,True
 581,21,UK,6.3,6.4,4,False,False,True,False,False,False,False,False,False,True,False,False,False,False,False,False,False,True,True,False
 582,24,Italy,4.9,7.3,2,True,False,False,True,False,False,False,False,False,False,False,False,False,False,False,False,True,False,False,True
-583,20,Russia,6.7,6.0,4,False,False,True,False,True,False,False,False,False,False,False,False,False,False,False,False,False,True,True,False
+583,20,Russia,6.7,6,4,False,False,True,False,True,False,False,False,False,False,False,False,False,False,False,False,False,True,True,False
 584,22,China,5.8,6.5,3,True,False,False,False,False,False,False,False,False,False,False,False,True,False,False,False,True,False,False,True
 585,19,Japan,4.5,7.6,2,False,False,True,False,False,False,False,False,False,False,True,False,False,False,False,False,False,True,True,False
 586,23,Poland,6.4,6.3,4,True,False,False,True,False,False,False,False,False,False,False,False,False,False,False,False,False,True,False,True
@@ -589,7 +589,7 @@ Student_ID,Age,Country,Avg_Daily_Usage_Hours,Sleep_Hours_Per_Night,Conflicts_Ove
 588,24,Spain,6.6,6.2,4,True,False,False,False,False,False,False,False,False,True,False,False,False,False,False,False,False,True,False,True
 589,20,Denmark,4.4,7.4,2,False,False,True,False,True,False,False,False,False,False,False,False,False,False,False,False,True,False,True,False
 590,22,Ireland,5.7,6.8,3,True,False,False,False,False,False,False,False,False,False,True,False,False,False,False,False,False,True,False,True
-591,19,India,7.0,5.8,5,False,False,True,False,True,False,False,False,False,False,False,False,False,False,False,False,False,True,True,False
+591,19,India,7,5.8,5,False,False,True,False,True,False,False,False,False,False,False,False,False,False,False,False,False,True,True,False
 592,23,Switzerland,4.3,7.5,2,True,False,False,True,False,False,False,False,False,False,False,False,False,False,False,False,True,False,False,True
 593,21,Turkey,6.9,6.1,4,False,False,True,False,False,False,False,False,False,True,False,False,False,False,False,False,False,True,True,False
 594,24,USA,5.6,6.9,3,True,False,False,False,True,False,False,False,False,False,False,False,False,False,False,False,True,False,False,True
@@ -598,7 +598,7 @@ Student_ID,Age,Country,Avg_Daily_Usage_Hours,Sleep_Hours_Per_Night,Conflicts_Ove
 597,23,Canada,4.9,7.3,2,True,False,False,False,False,False,False,False,False,True,False,False,False,False,False,False,True,False,True,False
 598,20,UK,6.4,6.2,4,False,False,True,True,False,False,False,False,False,False,False,False,False,False,False,False,False,True,False,True
 599,22,Italy,5.1,7.1,2,True,False,False,False,False,False,False,False,False,False,True,False,False,False,False,False,True,False,True,False
-600,19,Russia,6.7,6.0,4,False,False,True,False,True,False,False,False,False,False,False,False,False,False,False,False,False,True,False,True
+600,19,Russia,6.7,6,4,False,False,True,False,True,False,False,False,False,False,False,False,False,False,False,False,False,True,False,True
 601,24,China,5.5,6.8,3,True,False,False,False,False,False,False,False,False,False,False,False,True,False,False,False,True,False,True,False
 602,21,Japan,4.3,7.6,2,False,False,True,False,False,False,False,False,False,False,True,False,False,False,False,False,False,True,False,True
 603,23,Poland,6.2,6.4,4,True,False,False,False,True,False,False,False,False,False,False,False,False,False,False,False,False,True,True,False
@@ -623,7 +623,7 @@ Student_ID,Age,Country,Avg_Daily_Usage_Hours,Sleep_Hours_Per_Night,Conflicts_Ove
 622,20,Spain,6.5,6.2,4,False,False,True,True,False,False,False,False,False,False,False,False,False,False,False,False,False,True,False,True
 623,22,Denmark,4.6,7.3,2,True,False,False,False,False,False,False,False,False,False,True,False,False,False,False,False,True,False,True,False
 624,19,Ireland,5.8,6.6,3,False,False,True,False,True,False,False,False,False,False,False,False,False,False,False,False,False,True,False,True
-625,24,India,7.0,5.8,5,True,False,False,False,False,False,False,False,False,True,False,False,False,False,False,False,False,True,True,False
+625,24,India,7,5.8,5,True,False,False,False,False,False,False,False,False,True,False,False,False,False,False,False,False,True,True,False
 626,21,Switzerland,4.5,7.3,2,False,False,True,True,False,False,False,False,False,False,False,False,False,False,False,False,True,False,False,True
 627,23,Turkey,6.7,6.1,4,True,False,False,False,True,False,False,False,False,False,False,False,False,False,False,False,False,True,True,False
 628,20,USA,5.5,6.8,3,False,False,True,False,False,False,False,False,False,False,True,False,False,False,False,False,True,False,False,True
@@ -642,7 +642,7 @@ Student_ID,Age,Country,Avg_Daily_Usage_Hours,Sleep_Hours_Per_Night,Conflicts_Ove
 641,22,Ireland,5.9,6.5,3,True,False,False,False,True,False,False,False,False,False,False,False,False,False,False,False,False,True,True,False
 642,19,India,7.2,5.7,5,False,False,True,False,False,False,False,False,False,True,False,False,False,False,False,False,False,True,False,True
 643,24,Switzerland,4.6,7.2,2,True,False,False,True,False,False,False,False,False,False,False,False,False,False,False,False,True,False,True,False
-644,21,Turkey,6.8,6.0,4,False,False,True,False,True,False,False,False,False,False,False,False,False,False,False,False,False,True,False,True
+644,21,Turkey,6.8,6,4,False,False,True,False,True,False,False,False,False,False,False,False,False,False,False,False,False,True,False,True
 645,23,USA,5.3,6.8,3,True,False,False,False,False,False,False,False,False,False,True,False,False,False,False,False,True,False,True,False
 646,22,Mexico,6.3,6.2,4,True,False,False,True,False,False,False,False,False,False,False,False,False,False,False,False,False,True,False,True
 647,20,France,4.8,7.1,2,False,False,True,False,True,False,False,False,False,False,False,False,False,False,False,False,True,False,True,False
@@ -659,7 +659,7 @@ Student_ID,Age,Country,Avg_Daily_Usage_Hours,Sleep_Hours_Per_Night,Conflicts_Ove
 658,22,Ireland,5.8,6.6,3,True,False,False,False,True,False,False,False,False,False,False,False,False,False,False,False,False,True,False,True
 659,20,India,7.1,5.8,5,False,False,True,False,False,False,False,False,False,True,False,False,False,False,False,False,False,True,True,False
 660,23,Switzerland,4.5,7.3,2,True,False,False,True,False,False,False,False,False,False,False,False,False,False,False,False,True,False,False,True
-661,21,Turkey,6.7,6.0,4,False,False,True,False,True,False,False,False,False,False,False,False,False,False,False,False,False,True,True,False
+661,21,Turkey,6.7,6,4,False,False,True,False,True,False,False,False,False,False,False,False,False,False,False,False,False,True,True,False
 662,24,USA,5.4,6.8,3,True,False,False,False,False,False,False,False,False,False,True,False,False,False,False,False,True,False,False,True
 663,19,Mexico,6.4,6.2,4,False,False,True,False,False,False,False,False,False,True,False,False,False,False,False,False,False,True,True,False
 664,22,France,4.7,7.2,2,True,False,False,True,False,False,False,False,False,False,False,False,False,False,False,False,True,False,False,True
@@ -676,14 +676,14 @@ Student_ID,Age,Country,Avg_Daily_Usage_Hours,Sleep_Hours_Per_Night,Conflicts_Ove
 675,19,Ireland,5.9,6.5,3,False,False,True,False,True,False,False,False,False,False,False,False,False,False,False,False,False,True,True,False
 676,22,India,7.2,5.7,5,True,False,False,True,False,False,False,False,False,False,False,False,False,False,False,False,False,True,False,True
 677,20,Switzerland,4.6,7.2,2,False,False,True,False,False,False,False,False,False,True,False,False,False,False,False,False,True,False,True,False
-678,23,Turkey,6.8,6.0,4,True,False,False,False,True,False,False,False,False,False,False,False,False,False,False,False,False,True,False,True
+678,23,Turkey,6.8,6,4,True,False,False,False,True,False,False,False,False,False,False,False,False,False,False,False,False,True,False,True
 679,21,USA,5.3,6.8,3,False,False,True,False,False,False,False,False,False,False,True,False,False,False,False,False,True,False,True,False
 680,24,Mexico,6.2,6.3,4,True,False,False,True,False,False,False,False,False,False,False,False,False,False,False,False,False,True,False,True
 681,19,France,4.7,7.2,2,False,False,True,False,True,False,False,False,False,False,False,False,False,False,False,False,True,False,True,False
 682,22,Canada,5.8,6.6,3,True,False,False,False,False,False,False,False,False,True,False,False,False,False,False,False,False,True,False,True
 683,20,UK,6.1,6.4,4,False,False,True,False,False,False,False,False,False,False,True,False,False,False,False,False,False,True,True,False
 684,23,Italy,4.8,7.1,2,True,False,False,True,False,False,False,False,False,False,False,False,False,False,False,False,True,False,False,True
-685,21,Russia,6.7,6.0,5,False,False,True,False,True,False,False,False,False,False,False,False,False,False,False,False,False,True,True,False
+685,21,Russia,6.7,6,5,False,False,True,False,True,False,False,False,False,False,False,False,False,False,False,False,False,True,True,False
 686,24,China,5.5,6.8,3,True,False,False,False,False,False,False,False,False,False,False,False,True,False,False,False,True,False,False,True
 687,19,Japan,4.2,7.5,2,False,False,True,False,False,False,False,False,False,False,True,False,False,False,False,False,False,True,True,False
 688,22,Poland,6.3,6.2,4,True,False,False,False,False,False,False,False,False,True,False,False,False,False,False,False,False,True,False,True
@@ -691,7 +691,7 @@ Student_ID,Age,Country,Avg_Daily_Usage_Hours,Sleep_Hours_Per_Night,Conflicts_Ove
 690,23,Spain,6.5,6.1,4,True,False,False,True,False,False,False,False,False,False,False,False,False,False,False,False,False,True,False,True
 691,21,Denmark,4.6,7.3,2,False,False,True,False,False,False,False,False,False,False,True,False,False,False,False,False,True,False,True,False
 692,24,Ireland,5.9,6.5,3,True,False,False,False,True,False,False,False,False,False,False,False,False,False,False,False,False,True,False,True
-693,19,India,7.0,5.8,5,False,False,True,False,False,False,False,False,False,True,False,False,False,False,False,False,False,True,True,False
+693,19,India,7,5.8,5,False,False,True,False,False,False,False,False,False,True,False,False,False,False,False,False,False,True,True,False
 694,22,Switzerland,4.5,7.3,2,True,False,False,True,False,False,False,False,False,False,False,False,False,False,False,False,True,False,False,True
 695,20,Turkey,6.6,6.1,4,False,False,True,False,True,False,False,False,False,False,False,False,False,False,False,False,False,True,True,False
 696,23,USA,5.5,6.7,3,True,False,False,False,False,False,False,False,False,False,True,False,False,False,False,False,True,False,False,True
